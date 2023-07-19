@@ -1,11 +1,9 @@
 @use "global" as *;
 
-.drawer-menu--dp-none {
-  display: none;
-}
 .header {
   position: fixed;
   width: 100%;
+  z-index: 5000;
 }
 .header__inner {
   position: relative;
@@ -22,7 +20,7 @@
     height: rem(180);
   }
 }
-.header__icon-pc.is-open{
+.header__icon-pc.is-open {
   display: block;
 }
 .header__icon-pc img {
@@ -81,4 +79,10 @@
 
 .header__button-icon {
   margin-right: rem(10);
+}
+
+/* スクロールしたらヘッダーメニューのバックグランドカラー変更 */
+.js-header.headerColorScroll {
+  background-color: $white;
+  transition: color 0.4s ease-out;
 }

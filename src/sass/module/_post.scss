@@ -11,6 +11,12 @@
     padding-bottom: rem(50);
   }
 }
+.post__item:not(:first-child) {
+  padding-top: rem(30);
+  @include mq(md) {
+    padding-top: rem(50);
+  }
+}
 .post__item a {
   display: inherit;
 }

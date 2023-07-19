@@ -1,12 +1,22 @@
 @use "global" as *;
 
 .aboutUs {
+  width: 100%;
+  max-width: rem(500);
+  margin-right: auto;
+  margin-left: auto;
+  @include mq(md) {
+    max-width: initial;
+    margin-right: initial;
+    margin-left: initial;
+  }
 }
-
 .aboutUs__inner {
   display: flex;
   flex-direction: column;
+  margin-top: rem(40);
   @include mq(md) {
+    margin-top: rem(20);
     flex-direction: row;
   }
 }
@@ -14,7 +24,7 @@
 .aboutUs__image {
   position: relative;
   @include mq(md) {
-    width: calc((550 / 1080) * 100%);
+    width: calc((550 / 1100) * 100%);
   }
 }
 .aboutUs__image::before {
@@ -37,7 +47,7 @@
 .aboutUs__meta {
   margin-top: rem(30);
   @include mq(md) {
-    width: calc((490 / 1080) * 100%);
+    width: calc((490 / 1100) * 100%);
     margin-top: rem(70);
     margin-left: rem(60);
   }

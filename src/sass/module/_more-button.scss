@@ -1,5 +1,8 @@
 @use "global" as *;
 
+.more-button {
+}
+
 .more-button button {
   display: inline-block;
   color: $blue;
@@ -15,6 +18,10 @@
   width: rem(140);
   text-align: left;
 }
+.more-button button:hover {
+  background-color: $blue;
+  color: $white;
+}
 
 .more-button button:before {
   position: absolute;
@@ -26,4 +33,9 @@
   height: rem(8);
   right: rem(24);
   transform: rotate(45deg);
+}
+
+.more-button button:hover:before {
+  border-right: 2px solid $white;
+  border-top: 2px solid $white;
 }

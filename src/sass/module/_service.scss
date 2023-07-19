@@ -1,0 +1,37 @@
+@use "global" as *;
+
+.service {
+}
+
+.service__inner {
+}
+
+.service__title {
+  text-align: right;
+}
+
+.service__items {
+  margin-top: rem(20);
+  width: 100%;
+  max-width: rem(500);
+  margin-right: auto;
+  margin-left: auto;
+  @include mq(md) {
+    max-width: initial;
+    margin-right: initial;
+    margin-left: initial;
+    margin-top: rem(40);
+  }
+}
+
+.service__item {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: rem(50);
+  @include mq(md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.more-button {
+}
