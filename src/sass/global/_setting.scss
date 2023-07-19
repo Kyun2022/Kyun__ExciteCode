@@ -6,24 +6,22 @@ $inner: 1100px;
 // ※キュンパス幅ではなくインナーの幅を指す
 
 // 余白
-$padding-pc: 25px;
-$padding-sp: 20px;
+$padding-pc: 20px;
+$padding-sp: 10px;
 
 ////////////////////
 // フォント設定
 ////////////////////
 
-$base-font-family: "";
-$second-font-family: "";
+$jp-font: "'Noto Sans JP", sans-serif;
+$en-font1: "Oswald", sans-serif;
+$en-font2: "Roboto", sans-serif;
 // ※検証ツールでしっかり反映されているか確認する
-
-body {
-  font-family: $base-font-family;
-}
 
 // フォントウェイト
 $regular: 300;
 $normal: 400;
+$medium: 500;
 $bold: 700;
 
 ////////////////////
@@ -31,5 +29,25 @@ $bold: 700;
 ////////////////////
 
 //色指定（共通性のあるものは出来る限り指定すると良い）
-$black: #111;
+$black: #000;
+$black2: #242424;
 $white: #fff;
+$white2: #f8f8f8;
+$white3: #f3f3f3;
+$white4: #e2e2e2;
+$blue: #011950;
+$blue2: #001e63;
+$blue3: #001135;
+$gray: #626262;
+$gray2: #a9a9a9;
+
+body {
+  font-family: $jp-font;
+  color: $black;
+}
+
+body.active {
+  overflow: hidden;
+  height: 100vh;
+}
+

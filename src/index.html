@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
   <meta name="robots" content="noindex" />
   <!-- meta情報 -->
-  <title>CodeUps</title>
+  <title>ExciteCode</title>
   <meta name="description" content="" />
   <meta name="keywords" content="" />
   <!-- ogp -->
@@ -17,24 +18,133 @@
   <meta property="og:site_name" content="" />
   <meta property="og:description" content="" />
   <!-- ファビコン -->
-  <link rel="”icon”" href="" />
+  <link rel="”icon”" href="#" />
+  <!-- Google-font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Oswald:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <!-- css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
   <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="https://kit.fontawesome.com/990eeb164c.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script defer src="./assets/js/script.js"></script>
 </head>
-<body>
-  <header>
 
-  </header>
-  <main>
-    <div class="inner">
-      <p class="test">変更のテスト</p>
+<body>
+  <!-- ヘッダー -->
+  <header class="header">
+    <div class="header__inner">
+      <h1 class="header__icon-pc js-header__icon-pc"><a href="#"><img src="./assets/images/common/logo-white.png" alt="白色のロゴ'ExciteCode'"></a></h1>
+      <nav class="header__nav header__nav--md-none">
+        <ul class="header__items">
+          <li class="header__item"><a href="">top</a></li>
+          <li class="header__item"><a href="">about</a></li>
+          <li class="header__item"><a href="">service</a></li>
+          <li class="header__item"><a href="">works</a></li>
+          <li class="header__item"><a href="">news</a></li>
+          <li class="header__item header__button"><a href=""><i class="fa-regular fa-envelope header__button-icon"></i>contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- ハンバーガー -->
+      <div class="header__hamburger hamburger hamburger--md-show js-header__hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- ドロアー -->
+      <div class="header__drawer-menu drawer-menu drawer-menu--all-close js-header__drawer-menu">
+        <h1 class="drawer__icon-sp "><a href="#"><img src="./assets/images/common/logo-blue.png" alt="青色のロゴ'ExciteCode'"></a></h1>
+        <div class="drawer-menu__inner inner">
+          <ul class="drawer-menu__items">
+            <li class="drawer-menu__item"><a href="">top</a></li>
+            <li class="drawer-menu__item"><a href="">about</a></li>
+            <li class="drawer-menu__item"><a href="">service</a></li>
+            <li class="drawer-menu__item"><a href="">works</a></li>
+            <li class="drawer-menu__item"><a href="">news</a></li>
+            <li class="drawer-menu__item"><a href="">contact</a></li>
+            <li class="drawer-menu__item"><a href="">プライバシーポリシー</a></li>
+          </ul>
+          <div class="drawer-menu__sns-container">
+            <div class="drawer-menu__sns-icon"><i class="fa-brands fa-facebook"></i></div>
+            <div class="drawer-menu__sns-icon"><i class="fa-brands fa-twitter"></i></div>
+            <div class="drawer-menu__sns-icon"><i class="fa-brands fa-instagram"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="drawer-menu__bg"></div>
     </div>
+  </header>
+
+  <main>
+    <!-- mv -->
+    <section class="mv">
+      <div class="mv__inner">
+        <!-- Swiper -->
+        <div class="swiper mv__slider js-mv__slider">
+          <div class="swiper-wrapper mv__items">
+            <div class="swiper-slide mv__item">
+              <picture>
+                <source srcset="./assets/images/common/top-mv-pc_1.jpg" media="(min-width: 768px)">
+                <img src="./assets/images/common/top-mv-sp_1.jpg" alt="">
+              </picture>
+            </div>
+            <div class="swiper-slide mv__item">
+              <picture>
+                <source srcset="./assets/images/common/top-mv-pc_2.jpg" media="(min-width: 768px)">
+                <img src="./assets/images/common/top-mv-sp_2.jpg" alt="">
+              </picture>
+            </div>
+            <div class="swiper-slide mv__item">
+              <picture>
+                <source srcset="./assets/images/common/top-mv-pc_3.jpg" media="(min-width: 768px)">
+                <img src="./assets/images/common/top-mv-sp_3.jpg" alt="">
+              </picture>
+            </div>
+            <div class="swiper-slide mv__item">
+              <picture>
+                <source srcset="./assets/images/common/mv-pc_4.jpg" media="(min-width: 768px)">
+                <img src="./assets/images/common/top-mv-sp_4.jpg" alt="">
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="mv__title">
+          <h2 class="mv__title-text mv__title-text--layout">あなたの</h2>
+          <h2 class="mv__title-text">日常が目覚める</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- スクロールタイトル -->
+    <div class="scroll-title">
+      <div class="scroll-title__inner">
+        <h2 class="scroll-title__text">Good&nbsp;life&nbsp;for&nbsp;Good&nbsp;Car</h2>
+      </div>
+    </div>
+
+    <!-- アバウト -->
+    <section class="aboutUs top-aboutUs">
+      <div class="aboutUs__inner inner">
+        <figure class="aboutUs__image"><img src="./assets/images/common/top-aboutUs.jpg" alt="前方に山々が聳えている道路にオープンカーが走っている様子"></figure>
+        <div class="aboutUs__meta">
+          <h3 class="aboutUs__title">about&nbsp;us</h3>
+          <p class="aboutUs__text">弊社は、輸入車選びのすべてを見つめ直し、新たなスタイルを提案するインポート・セレクト・ブランドです。これまでの憧れだけや批評家の意見といったイメージで選ぶのではなく、オーナー様となる方がクルマから直接感じるリアルな感性を第一にした、最良の一台との出会いをコーディネートいたします。</p>
+          <div class="aboutUs__button read-button">
+            <button onclick="location.href='#'">read&nbsp;more</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
   </main>
   <footer>
-
   </footer>
 </body>
 

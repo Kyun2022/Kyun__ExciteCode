@@ -1,0 +1,46 @@
+@use "global" as *;
+
+.read-button {
+}
+
+.read-button button {
+  color: $blue2;
+  font-family: $en-font2;
+  font-size: rem(14);
+  font-weight: $medium;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  padding-left: initial;
+  padding-right: rem(10);
+}
+.read-button button::before {
+  content: "";
+  border-right: rem(1) solid $blue2;
+  border-top: rem(1) solid $blue2;
+  position: absolute;
+  top: rem(7);
+  right: rem(-5);
+  transform: rotate(45deg);
+  width: rem(8);
+  height: rem(8);
+}
+.read-button button:hover::before {
+  right: rem(-10);
+}
+
+.read-button button::after {
+  position: absolute;
+  bottom: rem(-3);
+  left: 0;
+  content: "";
+  width: 100%;
+  height: rem(1);
+  background: $blue2;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: transform 0.3s;
+}
+.read-button button:hover::after {
+  transform: scale(1, 1);
+}

@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.title {
+}
+
+.title__text {
+  color: #000;
+  font-family: $en-font1;
+  font-size: rem(38);
+  font-weight: $bold;
+  line-height: 1;
+  @include mq(md) {
+    font-size: rem(70);
+  }
+}
+
+.title__text::first-letter {
+  text-transform: uppercase;
+}

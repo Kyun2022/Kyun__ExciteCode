@@ -1,0 +1,60 @@
+@use "global" as *;
+
+.news__timeline {
+  background-color: $white2;
+}
+
+.timeline {
+}
+
+.timeline__item {
+  padding: rem(20) 0;
+  border-top: 1px solid $white4;
+}
+.timeline__link:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.timeline__container {
+  display: flex;
+}
+
+.timeline__date-label {
+  color: $gray2;
+  font-family: $jp-font;
+  font-size: rem(10);
+  font-weight: $bold;
+  padding: rem(5) rem(12) rem(5) 0;
+}
+
+.timeline__topics-label {
+  color: $gray;
+  font-family: $jp-font;
+  font-size: rem(10);
+  font-weight: $medium;
+  padding: rem(5) rem(15);
+  background-color: $white;
+}
+
+.timeline__info-label {
+  margin-left: rem(6);
+  color: $gray;
+  font-family: $jp-font;
+  font-size: rem(10);
+  font-weight: $medium;
+  padding: rem(5) rem(15);
+  background-color: $white;
+}
+
+.timeline__body {
+  margin-top: rem(20);
+}
+
+.timeline__title {
+  color: $black;
+  font-family: $jp-font;
+  font-size: rem(14);
+  font-weight: $medium;
+  line-height: calc(28 / 14);
+}

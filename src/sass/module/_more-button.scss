@@ -1,0 +1,29 @@
+@use "global" as *;
+
+.more-button button {
+  display: inline-block;
+  color: $blue;
+  font-family: $en-font2;
+  font-size: rem(14);
+  font-weight: $medium;
+  padding: rem(12) rem(24);
+  background-color: $white;
+  border: 1px solid $blue;
+  border-radius: rem(4);
+  text-transform: uppercase;
+  position: relative;
+  width: rem(140);
+  text-align: left;
+}
+
+.more-button button:before {
+  position: absolute;
+  border-right: 2px solid $blue;
+  border-top: 2px solid $blue;
+  top: rem(18);
+  content: "";
+  width: rem(8);
+  height: rem(8);
+  right: rem(24);
+  transform: rotate(45deg);
+}
