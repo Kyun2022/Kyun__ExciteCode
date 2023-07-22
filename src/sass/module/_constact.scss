@@ -1,0 +1,142 @@
+@use "global" as *;
+
+.contact {
+}
+
+.contact__inner {
+  display: flex;
+  flex-direction: column-reverse;
+  @include mq(md) {
+    flex-direction: row;
+  }
+}
+
+.contact__image {
+  position: relative;
+  width: 100%;
+  @include mq(md) {
+    max-width: calc((820 / 1440) * 100%);
+  }
+}
+.contact__image::before {
+  content: "";
+  display: block;
+  padding-top: calc((240 / 375) * 100%);
+  @include mq(md) {
+    padding-top: calc((446 / 820) * 100%);
+  }
+}
+.contact__image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact__body {
+  width: 100%;
+  height: rem(415);
+  background: $blue;
+  @include mq(md) {
+    height: rem(446);
+    max-width: calc((620 / 1440) * 100%);
+  }
+}
+
+.contact__meta {
+  width: 100%;
+  max-width: rem(227);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  @include mq(md) {
+    max-width: rem(275);
+  }
+}
+.contact__title {
+  color: $white;
+  font-family: $jp-font;
+  font-weight: $normal;
+  font-size: rem(14);
+  line-height: calc(28 / 14);
+  @include mq(md) {
+    font-size: rem(18);
+    line-height: calc(30 / 18);
+  }
+}
+
+.contact__button-block {
+  margin-top: rem(25);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: rem(20);
+}
+
+.contact__button {
+  color: $white;
+  border: 1px solid $white;
+  display: inline-block;
+  border-radius: rem(5);
+  padding: rem(19) rem(15);
+  width: rem(227);
+  text-align: center;
+  @include mq(md) {
+    text-align: left;
+    padding: rem(18) rem(15) rem(18) rem(32);
+    width: rem(235);
+  }
+}
+.contact__button:hover {
+  color: $blue;
+  background-color: $white;
+}
+
+.contact__button a {
+  font-family: $jp-font;
+  font-weight: $normal;
+  font-size: rem(16);
+  @include mq(md) {
+    font-size: rem(22);
+  }
+}
+
+.contact__button--telephone-icon {
+  margin-right: rem(10);
+  width: rem(22);
+  height: rem(22);
+  @include mq(md) {
+    margin-right: rem(16);
+    width: rem(16);
+    height: rem(16);
+  }
+}
+
+.contact__button--letter-icon {
+  margin-right: rem(10);
+  width: rem(16);
+  height: rem(16);
+  @include mq(md) {
+    width: rem(22);
+    height: rem(22);
+  }
+}
+.contact__text {
+  color: $white;
+  font-family: $jp-font;
+  font-size: rem(12);
+  font-weight: $normal;
+  text-align: center;
+  @include mq(md) {
+    text-align: left;
+    font-size: rem(14);
+  }
+}

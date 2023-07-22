@@ -4,14 +4,14 @@
   display: flex;
   flex-direction: column;
 }
-.card__link:hover {
-  opacity: 0.5;
-  transition: 0.3s;
-}
+
 .card__header {
   position: relative;
 }
-
+.card__header:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
 .card__image {
   position: relative;
   z-index: 1;

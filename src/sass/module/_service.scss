@@ -1,6 +1,8 @@
 @use "global" as *;
 
 .service {
+  padding-right: rem(10);
+  padding-left: rem(10);
 }
 
 .service__inner {

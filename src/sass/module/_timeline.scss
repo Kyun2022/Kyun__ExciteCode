@@ -1,15 +1,14 @@
 @use "global" as *;
 
-.news__timeline {
-  background-color: $white2;
-}
-
 .timeline {
 }
 
 .timeline__item {
   padding: rem(20) 0;
   border-top: 1px solid $white4;
+}
+.timeline__item:last-child {
+  border-bottom: 1px solid $white4;
 }
 .timeline__link:hover {
   opacity: 0.5;
@@ -21,30 +20,41 @@
 }
 
 .timeline__date-label {
+  display: inline-block;
   color: $gray2;
   font-family: $jp-font;
   font-size: rem(10);
   font-weight: $bold;
-  padding: rem(5) rem(12) rem(5) 0;
+  padding: rem(5) rem(10) rem(5) 0;
+  @include mq(md) {
+    font-size: rem(12);
+    padding: rem(4) rem(18) rem(4) 0;
+  }
 }
 
 .timeline__topics-label {
+  display: inline-block;
   color: $gray;
   font-family: $jp-font;
   font-size: rem(10);
   font-weight: $medium;
-  padding: rem(5) rem(15);
+  padding: rem(5) rem(12);
   background-color: $white;
+  width: fit-content;
+  @include mq(md) {
+    font-size: rem(11);
+  }
 }
 
 .timeline__info-label {
-  margin-left: rem(6);
+  margin-left: rem(5);
   color: $gray;
   font-family: $jp-font;
   font-size: rem(10);
   font-weight: $medium;
-  padding: rem(5) rem(15);
+  padding: rem(5) rem(12);
   background-color: $white;
+  width: fit-content;
 }
 
 .timeline__body {
