@@ -1,0 +1,37 @@
+@use "global" as *;
+
+.sectionTitle__sub-title {
+  color: $blue2;
+  font-family: $jp-font;
+  font-weight: $bold;
+  font-size: rem(12);
+  @include mq(md) {
+    font-size: rem(16);
+  }
+}
+
+.sectionTitle__title-text {
+  color: $black;
+  font-family: $en-font1;
+  font-size: rem(26);
+  font-weight: $bold;
+  display: inline-block;
+  position: relative;
+  @include mq(md) {
+    font-size: rem(40);
+  }
+}
+
+.sectionTitle__title-text::first-letter {
+  text-transform: capitalize;
+}
+.sectionTitle__title-text::after {
+  content: "";
+  display: inline-block;
+  width: rem(60);
+  height: rem(2);
+  background-color: $black;
+  position: absolute;
+  top: 50%;
+  right: rem(-70);
+}

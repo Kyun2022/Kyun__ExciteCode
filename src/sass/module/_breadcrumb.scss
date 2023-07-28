@@ -1,0 +1,35 @@
+@use "global" as *;
+
+.breadcrumb {
+  margin-top: rem(10);
+  text-align: right;
+  padding-right: rem(10);
+  padding-left: rem(10);
+  @include mq(md) {
+    padding-right: rem(60);
+    padding-left: rem(60);
+  }
+}
+
+.breadcrumb-text {
+  color: $gray2;
+  font-family: $en-font2;
+  font-size: rem(10);
+  font-weight: $normal;
+  @include mq(md) {
+    font-size: rem(15);
+  }
+}
+
+.breadcrumb__line {
+  padding-right: rem(15);
+  padding-left: rem(15);
+  margin-right: rem(10);
+  margin-left: rem(10);
+  content: "";
+  display: inline-block;
+  width: rem(10);
+  height: rem(1);
+  margin-bottom: rem(5);
+  background-color: $gray2;
+}

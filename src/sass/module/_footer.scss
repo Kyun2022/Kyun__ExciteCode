@@ -35,7 +35,7 @@
   }
 }
 .footer__item--layout {
-  width: 100vw;
+  margin-right: calc(50% - 50vw);
 }
 .footer__item a {
   display: block;
@@ -87,8 +87,6 @@
   }
 }
 
-.footer__sns a {
-}
 
 .footer-sns-icon {
   width: rem(19);

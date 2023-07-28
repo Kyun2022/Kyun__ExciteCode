@@ -36,7 +36,7 @@
 
 <body>
   <!-- ヘッダー -->
-  <header class="header js-header">
+  <header class="header sub-header js-header">
     <div class="header__inner">
       <h1 class="header__icon-pc js-header__icon-pc"><a href="#"><img src="./assets/images/common/logo-white.png" alt="白色のロゴ'ExciteCode'"></a></h1>
       <nav class="header__nav header__nav--md-none">
@@ -82,26 +82,72 @@
   </header>
 
   <main>
-    <!-- ファーストビュー -->
-
-
-
-    <!-- アバウト -->
-    <section class="aboutUs top-aboutUs">
-      <div class="aboutUs__inner inner">
-        <figure class="aboutUs__image"><img src="./assets/images/common/top-aboutUs.jpg" alt="前方に山々が聳えている道路にオープンカーが走っている様子"></figure>
-        <div class="aboutUs__meta">
-          <h3 class="aboutUs__title">about&nbsp;us</h3>
-          <p class="aboutUs__text">弊社は、輸入車選びのすべてを見つめ直し、新たなスタイルを提案するインポート・セレクト・ブランドです。これまでの憧れだけや批評家の意見といったイメージで選ぶのではなく、オーナー様となる方がクルマから直接感じるリアルな感性を第一にした、最良の一台との出会いをコーディネートいたします。</p>
-          <div class="aboutUs__button read-button">
-            <button onclick="location.href='#'">read&nbsp;more</button>
+    <section class="hero">
+      <div class="hero__inner inner">
+        <div class="hero__title-container hero__right">
+          <picture class="hero__image ">
+            <source srcset="./assets/images/common/sub-about__hero-pc.jpg" media="(min-width: 768px)">
+            <img src="./assets/images/common/sub-about__hero-sp.jpg" alt="">
+          </picture>
+          <div class="hero__container">
+            <h2 class="hero__title">about</h2>
+            <p class="hero__sub-title">私たちについて</p>
           </div>
         </div>
       </div>
     </section>
 
- 
+    <div class="breadcrumb">
+      <p class="breadcrumb-text">Top&nbsp;<span class="breadcrumb__line"></span>&nbsp;About</p>
+    </div>
 
+    <div class="sub-about__tab tab">
+      <div class="tab__inner inner">
+        <p class="tab-text"><a href="">経営理念</a></p>
+        <p class="tab-text"><a href="">アクセス</a></p>
+        <p class="tab-text"><a href="">会社概要</a></p>
+      </div>
+    </div>
+
+    <div class="sub-about__title inner">
+      <h2 class="sub-about__title-text">国境を超え、メーカーを超え<br>「型にはまらない」あなただけの歓びを</h2>
+      <p class="sub-about__text">弊社は、輸入車選びのすべてを見つめ直し、新たなスタイルを提案するインポート・セレクト・ブランドです。<br>これまでの憧れだけや批評家の意見といったイメージで選ぶのではなく、オーナー様となる方がクルマから直接感じるリアルな感性を第一にした、最良の一台との出会いをコーディネートいたします。</p>
+    </div>
+
+    <section class="sub-about__philosophy philosophy">
+      <div class="philosophy__inner inner">
+        <picture class="philosophy__image">
+          <source srcset="./assets/images/common/sub-about-pc.jpg" media="(min-width: 768px)">
+          <img src="./assets/images/common/sub-about-sp.jpg" alt="代表取締役の田中太郎さんがスーツで腕組みをしながら仁王立ちしている様子">
+        </picture>
+        <div class="philosophy__container">
+          <div class="philosophy__section-title sectionTitle">
+            <p class="sectionTitle__sub-title">経営理念</p>
+            <h2 class="sectionTitle__title-text">philosophy</h2>
+          </div>
+          <div class="philosophy__body">
+            <p class="philosophy__text">「お客様とは一生涯のお付き合い」をモットーとし、同時に社員一人一人が責任と誇り、使命感を持ち日々の仕事にやりがいと喜びを感じることができる会社を目指します。そういう「社員満足」があってこそ、本当の「お客様に満足」が可能になり、そしてお客様のご満足がさらに社員の満足を高めてくれるからです。心の豊かさは楽とかゆとりとかいうより仕事の充実感に求めねばなりません。我々は現状に満足することなく挑戦し続けます。</p>
+            <p class="philosophy__sub-text">代表取締役&emsp;田中太郎</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sub-about__access access">
+      <div class="access__inner inner">
+        <div class="access__section-title sectionTitle">
+          <p class="sectionTitle__sub-title">アクセス</p>
+          <h2 class="sectionTitle__title-text">Access</h2>
+        </div>
+        <div class="access__address-block">
+          <p class="access__address-number">〒000&#045;0000</p>
+          <p class="access__address">〇〇県△△市□□区▲▲町0-0-0</p>
+        </div>
+        <div class="access__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8157.64424604507!2d140.8760938583093!3d38.25491258014729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8a281662e35bed%3A0x16365c7100e6a26!2z44Km44Kn44K544OG44Kj44Oz44Ob44OG44Or5LuZ5Y-w!5e0!3m2!1sja!2sjp!4v1690556041866!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
 
 
     <!-- コンタクト -->
