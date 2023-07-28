@@ -6,15 +6,18 @@
 .works__inner.inner {
   padding-right: initial;
   padding-left: initial;
-  @include mq(md){
-   padding-right: rem(20);
-   padding-left: rem(20);
-}
+  @include mq(md) {
+    padding-right: rem(20);
+    padding-left: rem(20);
+  }
 }
 
 .works__title {
   text-align: left;
   padding-left: rem(20);
+  @include mq(md) {
+    padding-left: initial;
+  }
 }
 
 .works__container {

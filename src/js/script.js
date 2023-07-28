@@ -1,6 +1,8 @@
 jQuery(function ($) {
   // この中であればWordpressでも「$」が使用可能になる
-
+  /*//////////////////////////////////////
+Common
+/////////////////////////////////////*/
   // ハンバーガーメニュー
   $(".js-header__hamburger").on("click", function () {
     $(".drawer-menu__bg").toggleClass("is-active"); //丸背景にis-activeクラスを付与
@@ -18,7 +20,9 @@ jQuery(function ($) {
       $("body").addClass("active");
     }
   });
-
+  /*//////////////////////////////////////
+TOP
+/////////////////////////////////////*/
   // スワイパー
   const swiper = new Swiper(".js-mv__slider", {
     direction: "vertical",
@@ -42,5 +46,13 @@ jQuery(function ($) {
       }
     });
   });
-});
 
+  // スクロールして表示領域に入ったらclass付与
+  $(function () {
+    $(".js-slideLeft, .js-slideRight").on("inview", function () {
+      $(this).addClass("is-inview");
+    });
+  }); /*//////////////////////////////////////
+終了
+/////////////////////////////////////*/
+});

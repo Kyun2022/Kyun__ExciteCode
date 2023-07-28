@@ -1,0 +1,57 @@
+@use 'global' as *;
+
+/* フェードイン(初期値) */
+.js-slideLeft {
+  opacity: 0;
+  /* 最初は非表示 */
+  transform: translateX(-10%);
+  transition: opacity .8s, transform 1s;
+  /* 透過率と縦方向の移動を0.8秒 */
+  visibility: hidden;
+}
+
+/* フェードイン(スクロールした後) */
+.js-slideLeft.is-inview {
+  opacity: 1;
+  /* 表示領域に入ったら表示 */
+  transform: translateX(0);
+  transition-delay: .5s;
+  /* フェード開始を0.5秒遅らせる */
+  visibility: visible;
+}
+
+/* フェードイン(初期値) */
+.js-slideRight {
+  opacity: 0;
+  /* 最初は非表示 */
+  transform: translateX(10%);
+  transition: opacity .8s, transform 1s;
+  visibility: hidden;
+
+  @include mq(md) {
+    opacity: 0;
+    /* 最初は非表示 */
+    transform: translateX(10%);
+    transition: opacity .8s, transform 1s;
+    visibility: hidden;
+  }
+}
+
+/* フェードイン(スクロールした後) */
+.js-slideRight.is-inview {
+  opacity: 1;
+  /* 表示領域に入ったら表示 */
+  transform: translateX(0);
+  transition-delay: .5s;
+  /* フェード開始を0.5秒遅らせる */
+  visibility: visible;
+
+  @include mq(md) {
+    opacity: 1;
+    /* 表示領域に入ったら表示 */
+    transform: translateX(0);
+    transition-delay: .5s;
+    /* フェード開始を0.5秒遅らせる */
+    visibility: visible;
+  }
+}
