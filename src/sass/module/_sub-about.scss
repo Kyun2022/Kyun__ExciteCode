@@ -49,8 +49,27 @@
 }
 .sub-about__access {
   padding-top: rem(80);
+  @include mq(md) {
+    padding-top: rem(120);
+  }
+}
+
+.sub-about__profile {
+  margin-top: rem(80);
+  padding-top: rem(60);
+  background-color: $white2;
+  @include mq(md) {
+    margin-top: rem(120);
+    padding-top: rem(70);
+  }
+}
+
+.sub-about__slider {
+  padding-top: rem(80);
+  padding-bottom: rem(80);
   background-color: $white2;
   @include mq(md) {
     padding-top: rem(120);
+    padding-bottom: rem(120);
   }
 }

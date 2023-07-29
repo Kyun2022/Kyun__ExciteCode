@@ -52,7 +52,31 @@ TOP
     $(".js-slideLeft, .js-slideRight").on("inview", function () {
       $(this).addClass("is-inview");
     });
-  }); /*//////////////////////////////////////
+  });
+
+  /*//////////////////////////////////////
+About
+/////////////////////////////////////*/
+  const subSwiper = new Swiper(".js-sub-about__slider", {
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false, //ユーザーがスワイプなどの操作しても止まらない
+    },
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 3, // 一度に表示する枚数
+    allowTouchMove: false, // スワイプ無効
+    speed: 4500,
+    // breakpoint: {
+    //   375: {
+    //   },
+    //   500: {
+    //   },
+    //   785: {
+    //   },
+    // },
+  });
+  /*//////////////////////////////////////
 終了
 /////////////////////////////////////*/
 });

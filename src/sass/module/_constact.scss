@@ -42,8 +42,11 @@
   height: auto;
   max-width: 100%;
   background: $blue;
+  padding: rem(80);
+
   @include mq(md) {
     max-width: calc((620 / 1440) * 100%);
+    padding: rem(80) 0;
   }
 }
 

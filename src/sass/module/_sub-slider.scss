@@ -1,0 +1,41 @@
+@use "global" as *;
+
+.sub-slider {
+  width: 100vw;
+  height: auto;
+  overflow: hidden;
+}
+.swiper-wrapper {
+  transition-timing-function: linear;
+}
+
+.sub-slider__item {
+  min-width: rem(180);
+  min-height: rem(150);
+  @include mq(md) {
+    width: 100%;
+    height: auto;
+    // min-width: rem(480);
+    // min-height: rem(400);
+  }
+}
+.sub-slider__image {
+  position: relative;
+}
+.sub-slider__image::before {
+  content: "";
+  display: block;
+  padding-top: calc((150 / 180) * 100%);
+  @include mq(md) {
+    padding-top: calc((400 / 480) * 100%);
+  }
+}
+.sub-slider__image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
