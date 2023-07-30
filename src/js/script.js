@@ -5,21 +5,32 @@ Common
 /////////////////////////////////////*/
   // ハンバーガーメニュー
   $(".js-header__hamburger").on("click", function () {
-    $(".drawer-menu__bg").toggleClass("is-active"); //丸背景にis-activeクラスを付与
+    $(".js-header__drawer-menu").toggleClass("panelActive"); //ナビゲーションにpanelActiveクラスを付与
+    $(".js-header__bg").toggleClass("circleActive"); //丸背景にcircleActiveクラスを付与f
     if ($(".js-header__hamburger").hasClass("is-open")) {
-      $(".js-header__drawer-menu").fadeOut();
-      $(".js-header__drawer-menu").addClass("is-open");
-
       $(this).removeClass("is-open");
-      $("body").removeClass("active");
     } else {
-      $(".js-header__drawer-menu").fadeIn();
       $(this).addClass("is-open");
-      $(".js-header__drawer-menu").removeClass("is-open");
-
-      $("body").addClass("active");
     }
+    $(".js-drawer-menu").click(function () {
+      //ナビゲーションリンクがクリックされたら
+      $(".js-header__drawer-menu").removeClass("panelActive"); //ナビゲーションにpanelActiveクラスを付与
+      $(".js-header__bg").removeClass("circleActive"); //丸背景にcircleActiveクラスを付与
+    });
   });
+
+  // ハンバーガーメニューのクリックイベント
+  // $(".js-header__hamburger").click(function () {
+  //   //ボタンがクリックされたら
+  //   $(".js-header__drawer-menu").toggleClass("panelActive"); //ナビゲーションにpanelActiveクラスを付与
+  //   $(".js-header__bg").toggleClass("circleActive"); //丸背景にcircleActiveクラスを付与
+  // });
+  // $(".js-drawer-menu").click(function () {
+  //   //ナビゲーションリンクがクリックされたら
+  //   $(".js-header__drawer-menu").removeClass("panelActive"); //ナビゲーションにpanelActiveクラスを付与
+  //   $(".js-header__bg").removeClass("circleActive"); //丸背景にcircleActiveクラスを付与
+  // });
+
   /*//////////////////////////////////////
 TOP
 /////////////////////////////////////*/
@@ -44,13 +55,6 @@ TOP
       } else {
         $(".js-header").removeClass("headerColorScroll");
       }
-    });
-  });
-
-  // スクロールして表示領域に入ったらclass付与
-  $(function () {
-    $(".js-slideLeft, .js-slideRight").on("inview", function () {
-      $(this).addClass("is-inview");
     });
   });
 

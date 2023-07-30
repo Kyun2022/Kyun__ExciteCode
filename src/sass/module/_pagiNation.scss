@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.pagiNation__items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: rem(12);
+  @include mq(md) {
+    justify-content: initial;
+  }
+}
+
+.pagiNation__item {
+  padding: rem(9.5) rem(17);
+  background-color: #e9eeef;
+}
+
+.pagiNation__item--colorChange {
+  background-color: $white;
+}
+.pagiNation__item--colorChange--right {
+  padding: rem(9.5) rem(17) rem(9.5) 0;
+}
+.pagiNation__item--colorChange--left {
+  padding: rem(9.5) 0 rem(9.5) rem(17);
+}
+.pagiNation__item--color {
+  background-color: $blue2;
+  color: $white;
+}

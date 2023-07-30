@@ -7,6 +7,9 @@
   display: flex;
   justify-content: center;
   gap: rem(46);
+  @include mq(md) {
+    gap: rem(120);
+  }
 }
 
 .tab-text a {

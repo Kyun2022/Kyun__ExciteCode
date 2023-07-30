@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="robots" content="noindex" />
+  <!-- meta情報 -->
+  <title>ExciteCode</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="#" />
+  <!-- Google-font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Oswald:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- JavaScript -->
+  <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="https://kit.fontawesome.com/990eeb164c.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script defer src="./assets/js/jquery.inview.min.js"></script>
+  <script defer src="./assets/js/script.js"></script>
+</head>
+
+<body>
+  <!-- ヘッダー -->
+  <header class="header sub-header js-header">
+    <div class="header__inner">
+      <h1 class="header__icon-pc js-header__icon-pc">
+        <a href="./index.html"><img src="./assets/images/common/logo-white.png" alt="白色のロゴ'ExciteCode'"></a>
+      </h1>
+      <nav class="header__nav header__nav--md-none">
+        <ul class="header__items">
+          <li class="header__item"><a href="./index.html">top</a></li>
+          <li class="header__item"><a href="./about.html">about</a></li>
+          <li class="header__item"><a href="./service.html">service</a></li>
+          <li class="header__item"><a href="./works.html">works</a></li>
+          <li class="header__item"><a href="./news.html">news</a></li>
+          <li class="header__item header__button"><a href=""><i class="fa-regular fa-envelope header__button-icon"></i>contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- ハンバーガー -->
+      <div class="header__hamburger hamburger hamburger--md-show js-header__hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- ドロアー -->
+      <div class="header__drawer-menu drawer-menu drawer-menu--all-close js-header__drawer-menu">
+        <h1 class="drawer__icon-sp "><a href="#"><img src="./assets/images/common/logo-blue.png" alt="青色のロゴ'ExciteCode'"></a></h1>
+        <div class="drawer-menu__inner inner">
+          <ul class="drawer-menu__items">
+            <li class="drawer-menu__item"><a href="./index.html">top</a></li>
+            <li class="drawer-menu__item"><a href="./about.html">about</a></li>
+            <li class="drawer-menu__item"><a href="./service.html">service</a></li>
+            <li class="drawer-menu__item"><a href="./works.html">works</a></li>
+            <li class="drawer-menu__item"><a href="./news.html">news</a></li>
+            <li class="drawer-menu__item"><a href="./contact.html">contact</a></li>
+            <li class="drawer-menu__item"><a href="">プライバシーポリシー</a></li>
+          </ul>
+          <div class="drawer-menu__sns-container">
+            <div class="drawer-menu__sns-icon"><i class="fa-brands fa-facebook"></i></div>
+            <div class="drawer-menu__sns-icon"><i class="fa-brands fa-twitter"></i></div>
+            <div class="drawer-menu__sns-icon"><i class="fa-brands fa-instagram"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="drawer-menu__bg"></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__inner inner">
+        <div class="hero__title-container hero__right">
+          <picture class="hero__image ">
+            <source srcset="./assets/images/common/sub-news__hero-pc.jpg" media="(min-width: 768px)">
+            <img src="./assets/images/common/sub-news__hero-sp.jpg" alt="">
+          </picture>
+          <div class="hero__container">
+            <h2 class="hero__title">news</h2>
+            <p class="hero__sub-title">お知らせ</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="breadcrumb">
+      <p class="breadcrumb-text">Top&nbsp;<span class="breadcrumb__line"></span>&nbsp;News</p>
+    </div>
+
+    <section class="sub-news">
+      <div class="sub-news__inner inner">
+        <div class="sub-news__container-left">
+          <ul class="sub-news__tab">
+            <li class="sub-news__tab-text sub-news__tab-text--current"><a href="">すべてのお知らせ</a></li>
+            <li class="sub-news__tab-text"><a href="">トピックス</a></li>
+            <li class="sub-news__tab-text"><a href="">イベント・キャンペーン</a></li>
+            <li class="sub-news__tab-text"><a href="">入庫車情報</a></li>
+          </ul>
+        </div>
+        <div class="sub-news__container-right">
+          <ul class="sub-news__timeline timeline">
+            <li class="timeline__item">
+              <a href="#" class="timeline__link">
+                <div class="timeline__container">
+                  <time class="timeline__date-label" datetime="2022-09-02">2022.09.02</time>
+                  <p class="timeline__topics-label">トピックス</p>
+                  <p class="timeline__info-label">イベント・キャンペーン</p>
+                </div>
+                <div class="timeline__body">
+                  <h3 class="timeline__title">2022年10月8日・9日・10日の3日間、試乗車フェアを開催します</h3>
+                </div>
+              </a>
+            </li>
+            <li class="timeline__item">
+              <a href="#" class="timeline__link">
+                <div class="timeline__container">
+                  <time class="timeline__date-label" datetime="2022-08-23">2022.08.23</time>
+                  <p class="timeline__topics-label">トピックス</p>
+                  <p class="timeline__info-label">入庫車情報</p>
+                </div>
+                <div class="timeline__body">
+                  <h3 class="timeline__title">【入庫車のご案内】メルセデスベンツG 350が入庫しました</h3>
+                </div>
+              </a>
+            </li>
+            <li class="timeline__item">
+              <a href="#" class="timeline__link">
+                <div class="timeline__container">
+                  <time class="timeline__date-label" datetime="2022-08-07">2022.08.07</time>
+                  <p class="timeline__topics-label">トピックス</p>
+                </div>
+                <div class="timeline__body">
+                  <h3 class="timeline__title">お盆休みのご案内</h3>
+                </div>
+              </a>
+            </li>
+            <li class="timeline__item">
+              <a href="#" class="timeline__link">
+                <div class="timeline__container">
+                  <time class="timeline__date-label" datetime="2022-08-03">2022.08.03</time>
+                  <p class="timeline__topics-label">トピックス</p>
+                  <p class="timeline__info-label">入庫車情報</p>
+                </div>
+                <div class="timeline__body">
+                  <h3 class="timeline__title">【入庫車のご案内】JEEPラングラー アンリミテッド サハラが入庫しました</h3>
+                </div>
+              </a>
+            </li>
+            <li class="timeline__item">
+              <a href="#" class="timeline__link">
+                <div class="timeline__container">
+                  <time class="timeline__date-label" datetime="2022-09-02">2022.09.02</time>
+                  <p class="timeline__topics-label">トピックス</p>
+                </div>
+                <div class="timeline__body">
+                  <h3 class="timeline__title">半導体不足は輸入車・輸入中古車にどう影響するか</h3>
+                </div>
+              </a>
+            </li>
+            <li class="timeline__item">
+              <a href="#" class="timeline__link">
+                <div class="timeline__container">
+                  <time class="timeline__date-label" datetime="2022-09-02">2022.09.02</time>
+                  <p class="timeline__topics-label">トピックス</p>
+                  <p class="timeline__info-label">イベント・キャンペーン</p>
+                </div>
+                <div class="timeline__body">
+                  <h3 class="timeline__title">2022年10月8日・9日・10日の3日間、試乗車フェアを開催します</h3>
+                </div>
+              </a>
+            </li>
+            <li class="timeline__item">
+              <a href="#" class="timeline__link">
+                <div class="timeline__container">
+                  <time class="timeline__date-label" datetime="2022-08-23">2022.08.23</time>
+                  <p class="timeline__topics-label">トピックス</p>
+                  <p class="timeline__info-label">入庫車情報</p>
+                </div>
+                <div class="timeline__body">
+                  <h3 class="timeline__title">【入庫車のご案内】メルセデスベンツG 350が入庫しました</h3>
+                </div>
+              </a>
+            </li>
+            <li class="timeline__item">
+              <a href="#" class="timeline__link">
+                <div class="timeline__container">
+                  <time class="timeline__date-label" datetime="2022-08-07">2022.08.07</time>
+                  <p class="timeline__topics-label">トピックス</p>
+                </div>
+                <div class="timeline__body">
+                  <h3 class="timeline__title">お盆休みのご案内</h3>
+                </div>
+              </a>
+            </li>
+            <li class="timeline__item">
+              <a href="#" class="timeline__link">
+                <div class="timeline__container">
+                  <time class="timeline__date-label" datetime="2022-08-03">2022.08.03</time>
+                  <p class="timeline__topics-label">トピックス</p>
+                  <p class="timeline__info-label">入庫車情報</p>
+                </div>
+                <div class="timeline__body">
+                  <h3 class="timeline__title">【入庫車のご案内】JEEPラングラー アンリミテッド サハラが入庫しました</h3>
+                </div>
+              </a>
+            </li>
+            <li class="timeline__item">
+              <a href="#" class="timeline__link">
+                <div class="timeline__container">
+                  <time class="timeline__date-label" datetime="2022-08-03">2022.07.06</time>
+                  <p class="timeline__topics-label">トピックス</p>
+                </div>
+                <div class="timeline__body">
+                  <h3 class="timeline__title">タイトルが46文字以降は点々で表示されますタイトルが46文字以降は点々で表示されますタイトル...</h3>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="sub-news__pageNation pageNation">
+            <ul class="pagiNation__items">
+              <li class="pagiNation__item pagiNation__item--colorChange pagiNation__item--colorChange--left"><a href="">&nbsp;&lt;&nbsp;</a></li>
+              <li class="pagiNation__item"><a href=""><span>1</span></a></li>
+              <li class="pagiNation__item"><a href=""><span>2</span></a></li>
+              <li class="pagiNation__item pagiNation__item--color"><a href=""><span>3</span></a></li>
+              <li class="pagiNation__item"><a href=""><span>4</span></a></li>
+              <li class="pagiNation__item"><a href=""><span>5</span></a></li>
+              <li class="pagiNation__item pagiNation__item--colorChange pagiNation__item--colorChange--right"><a href="">&nbsp;&gt;&nbsp;</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- コンタクト -->
+    <div class="contact top-contact">
+      <div class="contact__inner">
+        <figure class="contact__image"><img src="./assets/images/common/contact.jpg" alt=""></figure>
+        <div class="contact__body">
+          <div class="contact__meta">
+            <p class="contact__title">輸入車の購入や修理のご相談など<br>お気軽にお問い合わせください。</p>
+            <div class="contact__button-block">
+              <div class="contact__button"><a href="">
+                  <i class="fa-regular fa-envelope contact__button--letter-icon"></i>お問い合わせ</a>
+              </div>
+              <div class="contact__button contact__button--telephone"><a href="">
+                  <i class="fa-solid fa-phone-flip contact__button--telephone-icon"></i>0000&#045;000&#045;000</a>
+              </div>
+              <p class="contact__text">受付時間&nbsp;&#58;&nbsp;火曜日を除く&nbsp;10&#58;00〜18&#58;00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="footer__inner inner">
+      <ul class="footer__items">
+        <li class="footer__item"><a href="">top</a></li>
+        <li class="footer__item"><a href="">about</a></li>
+        <li class="footer__item"><a href="">service</a></li>
+        <li class="footer__item"><a href="">works</a></li>
+        <li class="footer__item"><a href="">news</a></li>
+        <li class="footer__item"><a href="">contact</a></li>
+        <li class="footer__item footer__item--layout"><a href="">プライバシーポリシー</a></li>
+      </ul>
+      <div class="footer__container">
+        <div class="footer__icon-block">
+          <h1 class="footer__icon"><a href="#"><img src="./assets/images/common/logo-blue.png" alt="ExciteCode会社のロゴ"></a></h1>
+          <div class="footer__sns-block">
+            <p class="footer__sns"><a href=""><i class="fa-brands footer-sns-icon fa-facebook"></i></a></p>
+            <p class="footer__sns"><a href=""><i class="fa-brands footer-sns-icon fa-twitter"></i></a></p>
+            <p class="footer__sns"><a href=""><i class="fa-brands footer-sns-icon fa-instagram"></i></a></p>
+          </div><a href=""></a>
+        </div>
+        <div class="footer__copyright">
+          <p class="footer__copyright-text">&copy;2022&nbsp;ExciteCode&nbsp;Automobile</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

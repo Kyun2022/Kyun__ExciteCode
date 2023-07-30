@@ -1,0 +1,49 @@
+@use "global" as *;
+
+.sub-service__tab {
+  margin-top: rem(30);
+}
+
+.sub-service__title {
+  margin-top: rem(60);
+  width: 100%;
+  max-width: rem(500);
+  @include mq(md) {
+    margin-top: rem(100);
+    max-width: rem(840);
+  }
+}
+
+.sub-service__title-text {
+  color: $black;
+  font-family: $jp-font;
+  font-weight: $medium;
+  font-size: rem(18);
+  line-height: calc(37 / 18);
+  @include mq(md) {
+    font-size: rem(40);
+    line-height: calc(60 / 40);
+  }
+}
+
+.sub-service__text {
+  margin-top: rem(30);
+  color: $black;
+  font-family: $jp-font;
+  font-weight: $normal;
+  font-size: rem(14);
+  font-weight: $normal;
+  line-height: calc(32 / 14);
+  @include mq(md) {
+    margin-top: rem(40);
+    font-size: rem(16);
+    line-height: calc(38 / 16);
+  }
+}
+
+.sub-service__card {
+  margin-top: rem(50);
+  @include mq(md) {
+    margin-top: rem(120);
+  }
+}

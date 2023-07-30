@@ -1,0 +1,152 @@
+@use "global" as *;
+
+.service-card {
+}
+
+.service-card__inner {
+  width: 100%;
+  padding-right: initial;
+  padding-left: initial;
+  @include mq(md) {
+    max-width: rem(1220);
+  }
+}
+
+.service-card__items {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card__item {
+  display: flex;
+  flex-direction: column;
+}
+.service-card__container {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: $white2;
+  padding-right: rem(20);
+  padding-left: rem(20);
+  @include mq(md) {
+    flex-direction: row-reverse;
+    padding-right: initial;
+    padding-left: initial;
+  }
+}
+.service-card__image {
+  margin-top: rem(20);
+  position: relative;
+  @include mq(md) {
+    margin-top: initial;
+    width: 100%;
+    max-width: calc((640 / 1100) * 100%);
+  }
+}
+.service-card__image::before {
+  content: "";
+  display: block;
+  padding-top: calc((220 / 335) * 100%);
+  @include mq(md) {
+    padding-top: calc((500 / 640) * 100%);
+  }
+}
+.service-card__image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-card__body {
+  display: flex;
+  flex-direction: column;
+  padding-top: rem(68);
+  @include mq(md) {
+    padding: rem(111) rem(50);
+  }
+}
+.service-card__title-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card__title-number {
+  color: $blue2;
+  font-family: $en-font1;
+  font-size: rem(32);
+  font-weight: $bold;
+  @include mq(md) {
+    font-size: rem(40);
+  }
+}
+.service-card__title-number::after {
+  content: "";
+  display: inline-block;
+  width: rem(1);
+  height: rem(30);
+  margin-left: rem(10);
+  background-color: $black;
+  @include mq(md) {
+    height: rem(34);
+    margin-left: rem(34);
+  }
+}
+
+.service-card__title {
+  margin-top: rem(30);
+  color: $black;
+  font-family: $jp-font;
+  font-size: rem(20);
+  font-weight: $bold;
+}
+
+.service-card__text {
+  color: $black;
+  font-family: $jp-font;
+  font-weight: $medium;
+  margin-top: rem(20);
+  font-size: rem(14);
+  line-height: calc(32 / 14);
+  @include mq(md) {
+    font-size: rem(22);
+    line-height: calc(46 / 20);
+  }
+}
+
+.service-card__meta {
+  padding: rem(20) rem(20) rem(50);
+  background-color: $white;
+  @include mq(md) {
+    padding: rem(30) rem(50) rem(120);
+  }
+}
+
+.service-card__text-block {
+  display: flex;
+  flex-direction: row;
+  gap: rem(9);
+}
+
+.service-card__text-title {
+}
+
+.service-card__text-subTitle {
+  color: $gray;
+  font-family: $jp-font;
+  font-size: rem(10);
+  font-weight: $medium;
+  display: flex;
+  align-items: center;
+}
+
+.service-card__sub-text {
+  margin-top: rem(20);
+  color: $black;
+  font-family: $jp-font;
+  font-size: rem(14);
+  font-weight: $normal;
+  line-height: calc(32 / 14);
+}

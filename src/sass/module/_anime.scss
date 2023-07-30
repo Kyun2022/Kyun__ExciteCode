@@ -1,0 +1,87 @@
+@use "global" as *;
+
+.anime__fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.anime__fadeUp {
+  animation-name: fadeUp;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(rem(100));
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.anime__fadeDown {
+  animation-name: fadeDown;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(rem(-100));
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*//////////////////////////////////////
+クリック前後の要素を表示・非表示
+/////////////////////////////////////*/
+.hide__area {
+  display: none;
+}
+
+.hide__area.fadeIn {
+  display: block;
+}
+
+.btn.all__none {
+  display: none;
+}
+
+.anime__fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*//////////////////////////////////////
+終了
+/////////////////////////////////////*/

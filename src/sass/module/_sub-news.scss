@@ -1,10 +1,13 @@
 @use "global" as *;
 
-.news {
-  background-color: $white2;
+.sub-news {
+  padding: rem(30) 0 rem(80);
+  @include mq(md) {
+    padding: rem(61) 0 rem(124);
+  }
 }
 
-.news__inner {
+.sub-news__inner {
   display: flex;
   flex-direction: column;
 
@@ -13,18 +16,17 @@
   }
 }
 
-.news__container-left {
+.sub-news__container-left {
   @include mq(md) {
     width: calc((264 / 1080) * 100%);
   }
 }
 
-.news__title {
+.sub-news__title {
   padding-left: rem(10);
 }
 
-.news__tab {
-  margin-top: rem(40);
+.sub-news__tab {
   padding-right: rem(30);
   padding-left: rem(42);
   display: grid;
@@ -38,10 +40,10 @@
   }
 }
 
-.news__tab-text--current a {
+.sub-news__tab-text--current a {
   position: relative;
 }
-.news__tab-text--current a::before {
+.sub-news__tab-text--current a::before {
   content: "";
   display: block;
   width: rem(8);
@@ -52,7 +54,7 @@
   left: rem(-12);
 }
 
-.news__tab-text a {
+.sub-news__tab-text a {
   width: fit-content;
   display: inline;
   color: $black;
@@ -63,7 +65,7 @@
     font-size: rem(14);
   }
 }
-.news__container-right {
+.sub-news__container-right {
   padding-right: rem(30);
   padding-left: rem(30);
   @include mq(md) {
@@ -71,14 +73,21 @@
     border-left: 1px solid $white4;
   }
 }
-.news__timeline {
+.sub-news__timeline {
   margin-top: rem(40);
   @include mq(md) {
     margin-top: initial;
   }
 }
-.news__button {
+.sub-news__button {
   margin-top: rem(45);
   text-align: right;
   margin-right: rem(9);
+}
+
+.sub-news__pageNation {
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(56);
+  }
 }

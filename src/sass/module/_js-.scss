@@ -1,0 +1,81 @@
+@use "global" as *;
+
+/*//////////////////////////////////////
+スライドタイトル
+/////////////////////////////////////*/
+/* フェードイン(初期値) */
+.js-slideTitle__left {
+  opacity: 0;
+  /* 最初は非表示 */
+  transform: translateX(-10%);
+  transition: opacity 0.8s, transform 1s;
+  /* 透過率と縦方向の移動を0.8秒 */
+  visibility: hidden;
+}
+
+/* フェードイン(スクロールした後) */
+.js-slideTitle__left.is-inview {
+  opacity: 1;
+  /* 表示領域に入ったら表示 */
+  transform: translateX(0);
+  transition-delay: 0.5s;
+  /* フェード開始を0.5秒遅らせる */
+  visibility: visible;
+}
+
+/* フェードイン(初期値) */
+.js-slideTitle__right {
+  opacity: 0;
+  /* 最初は非表示 */
+  transform: translateX(10%);
+  transition: opacity 0.8s, transform 1s;
+  visibility: hidden;
+}
+
+/* フェードイン(スクロールした後) */
+.js-slideTitle__right.is-inview {
+  opacity: 1;
+  /* 表示領域に入ったら表示 */
+  transform: translateX(0);
+  transition-delay: 0.5s;
+  /* フェード開始を0.5秒遅らせる */
+  visibility: visible;
+}
+
+/*//////////////////////////////////////
+フェードドアップ
+/////////////////////////////////////*/
+/* フェードイン(初期値) */
+.js-fadeUp {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10%);
+  transition: opacity 1s, visibility 1s, transform 1s;
+}
+
+/* フェードイン(スクロールした後) */
+.is-show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+/*//////////////////////////////////////
+フェードダウン
+/////////////////////////////////////*/
+/* フェードイン(初期値) */
+.js-fadeDown {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10%);
+  transition: opacity 1s, visibility 1s, transform 1s;
+}
+
+/* フェードイン(スクロールした後) */
+.is-down {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+/*//////////////////////////////////////
+終了
+/////////////////////////////////////*/

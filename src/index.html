@@ -31,6 +31,7 @@
   <script defer src="https://kit.fontawesome.com/990eeb164c.js" crossorigin="anonymous"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script defer src="./assets/js/jquery.inview.min.js"></script>
+  <script defer src="./assets/js/animation.js"></script>
   <script defer src="./assets/js/script.js"></script>
 </head>
 
@@ -41,12 +42,12 @@
       <h1 class="header__icon-pc js-header__icon-pc"><a href="#"><img src="./assets/images/common/logo-white.png" alt="白色のロゴ'ExciteCode'"></a></h1>
       <nav class="header__nav header__nav--md-none">
         <ul class="header__items">
-          <li class="header__item"><a href="">top</a></li>
-          <li class="header__item"><a href="">about</a></li>
-          <li class="header__item"><a href="">service</a></li>
-          <li class="header__item"><a href="">works</a></li>
-          <li class="header__item"><a href="">news</a></li>
-          <li class="header__item header__button"><a href=""><i class="fa-regular fa-envelope header__button-icon"></i>contact</a></li>
+          <li class="header__item"><a href="./index.html">top</a></li>
+          <li class="header__item"><a href="./about.html">about</a></li>
+          <li class="header__item"><a href="./service.html">service</a></li>
+          <li class="header__item"><a href="./works.html">works</a></li>
+          <li class="header__item"><a href="./news.html">news</a></li>
+          <li class="header__item header__button"><a href="./contact.html"><i class="fa-regular fa-envelope header__button-icon"></i>contact</a></li>
         </ul>
       </nav>
 
@@ -58,16 +59,16 @@
       </div>
 
       <!-- ドロアー -->
-      <div class="header__drawer-menu drawer-menu drawer-menu--all-close js-header__drawer-menu">
+      <div class="header__drawer-menu drawer-menu js-header__drawer-menu">
         <h1 class="drawer__icon-sp "><a href="#"><img src="./assets/images/common/logo-blue.png" alt="青色のロゴ'ExciteCode'"></a></h1>
         <div class="drawer-menu__inner inner">
           <ul class="drawer-menu__items">
-            <li class="drawer-menu__item"><a href="">top</a></li>
-            <li class="drawer-menu__item"><a href="">about</a></li>
-            <li class="drawer-menu__item"><a href="">service</a></li>
-            <li class="drawer-menu__item"><a href="">works</a></li>
-            <li class="drawer-menu__item"><a href="">news</a></li>
-            <li class="drawer-menu__item"><a href="">contact</a></li>
+            <li class="drawer-menu__item"><a href="./index.html">top</a></li>
+            <li class="drawer-menu__item"><a href="./about.html">about</a></li>
+            <li class="drawer-menu__item"><a href="./service.html">service</a></li>
+            <li class="drawer-menu__item"><a href="./works.html">works</a></li>
+            <li class="drawer-menu__item"><a href="./news.html">news</a></li>
+            <li class="drawer-menu__item"><a href="./contact.html">contact</a></li>
             <li class="drawer-menu__item"><a href="">プライバシーポリシー</a></li>
           </ul>
           <div class="drawer-menu__sns-container">
@@ -77,7 +78,7 @@
           </div>
         </div>
       </div>
-      <div class="drawer-menu__bg"></div>
+      <div class="header__bg js-header__bg"></div>
     </div>
   </header>
 
@@ -145,7 +146,7 @@
     <!-- サービス -->
     <section class="service top-service">
       <div class="service__inner inner">
-        <div class="service__title title js-slideRight">
+        <div class="service__title title js-slideTitle__right">
           <h2 class="title__text">service</h2>
         </div>
         <div class="service__items">
@@ -209,12 +210,12 @@
     <!-- ワークス -->
     <section class="works top-works">
       <div class="works__inner inner">
-        <div class="works__title title js-slideLeft">
+        <div class="works__title title js-slideTitle__left">
           <h2 class="title__text">works</h2>
         </div>
         <div class="works__container">
-          <ul class="works__post post inner">
-            <li class="post__item">
+          <ul class="works__post post inner ">
+            <li class="post__item js-fadeUp">
               <a href="#" class="post__link">
                 <figure class="post__image"><img src="./assets/images/common/top-works_1.jpg" alt=""></figure>
                 <div class="post__body">
@@ -225,7 +226,7 @@
                 </div>
               </a>
             </li>
-            <li class="post__item">
+            <li class="post__item js-fadeUp">
               <a href="#" class="post__link">
                 <figure class="post__image"><img src="./assets/images/common/top-works_2.jpg" alt=""></figure>
                 <div class="post__body">
@@ -236,7 +237,7 @@
                 </div>
               </a>
             </li>
-            <li class="post__item">
+            <li class="post__item js-fadeUp">
               <a href="#" class="post__link">
                 <figure class="post__image"><img src="./assets/images/common/top-works_3.jpg" alt=""></figure>
                 <div class="post__body">
@@ -259,10 +260,10 @@
     <section class="news top-news">
       <div class="news__inner inner">
         <div class="news__container-left">
-          <div class="news__title title js-slideLeft">
+          <div class="news__title title js-slideTitle__left">
             <h2 class="title__text">news</h2>
           </div>
-          <ul class="news__tab">
+          <ul class="news__tab js-fadeUp">
             <li class="news__tab-text news__tab-text--current"><a href="">すべてのお知らせ</a></li>
             <li class="news__tab-text"><a href="">トピックス</a></li>
             <li class="news__tab-text"><a href="">イベント・キャンペーン</a></li>
@@ -270,7 +271,7 @@
           </ul>
         </div>
         <div class="news__container-right">
-          <ul class="news__timeline timeline">
+          <ul class="news__timeline timeline js-fadeDown">
             <li class="timeline__item">
               <a href="#" class="timeline__link">
                 <div class="timeline__container">

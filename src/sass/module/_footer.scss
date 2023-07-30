@@ -44,6 +44,7 @@
 }
 
 .footer__container {
+  overflow: hidden;
   padding-left: rem(10);
   @include mq(md) {
     width: calc((950 / 1100) * 100%);
@@ -86,7 +87,6 @@
     align-items: center;
   }
 }
-
 
 .footer-sns-icon {
   width: rem(19);
