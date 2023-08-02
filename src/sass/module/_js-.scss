@@ -12,7 +12,6 @@
   /* 透過率と縦方向の移動を0.8秒 */
   visibility: hidden;
 }
-
 /* フェードイン(スクロールした後) */
 .js-slideTitle__left.is-inview {
   opacity: 1;
@@ -22,7 +21,6 @@
   /* フェード開始を0.5秒遅らせる */
   visibility: visible;
 }
-
 /* フェードイン(初期値) */
 .js-slideTitle__right {
   opacity: 0;
@@ -31,7 +29,6 @@
   transition: opacity 0.8s, transform 1s;
   visibility: hidden;
 }
-
 /* フェードイン(スクロールした後) */
 .js-slideTitle__right.is-inview {
   opacity: 1;

@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.archive {
+}
+
+.archive__list {
+  color: $black;
+  font-family: $jp-font;
+  font-size: rem(14);
+  font-weight: $normal;
+  padding-bottom: rem(18);
+  border-bottom: 1px solid $white5;
+}
+
+.archive__list:not(:first-child) {
+  padding-top: rem(18);
+}

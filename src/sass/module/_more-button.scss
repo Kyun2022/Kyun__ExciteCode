@@ -3,7 +3,8 @@
 .more-button {
 }
 
-.more-button button {
+.more-button button,
+.more-button--next button {
   display: inline-block;
   color: $blue;
   font-family: $en-font2;
@@ -17,6 +18,9 @@
   position: relative;
   width: rem(140);
   text-align: left;
+}
+.more-button--next button {
+  text-align: right;
 }
 .more-button button:hover {
   background-color: $blue;
@@ -38,4 +42,28 @@
 .more-button button:hover:before {
   border-right: 2px solid $white;
   border-top: 2px solid $white;
+  margin-right: rem(-5);
+}
+
+.more-button--next button:hover {
+  background-color: $blue;
+  color: $white;
+}
+
+.more-button--next button:before {
+  position: absolute;
+  border-left: 2px solid $blue;
+  border-bottom: 2px solid $blue;
+  top: rem(18);
+  content: "";
+  width: rem(8);
+  height: rem(8);
+  left: rem(24);
+  transform: rotate(45deg) translateX(0);
+}
+
+.more-button--next button:hover:before {
+  border-left: 2px solid $white;
+  border-bottom: 2px solid $white;
+  margin-left: rem(-5);
 }

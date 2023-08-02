@@ -18,7 +18,7 @@
 
 .anime__fadeUp {
   animation-name: fadeUp;
-  animation-duration: 0.5s;
+  animation-duration: 0.8s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
@@ -26,7 +26,7 @@
 @keyframes fadeUp {
   from {
     opacity: 0;
-    transform: translateY(rem(100));
+    transform: translateY(rem(200));
   }
   to {
     opacity: 1;
@@ -36,7 +36,7 @@
 
 .anime__fadeDown {
   animation-name: fadeDown;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
@@ -49,6 +49,23 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+.anime__slideTitle--left {
+  animation-name: slideTitle--left;
+  animation-duration: 1.3s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes slideTitle--left {
+  from {
+    opacity: 0;
+    transform: translateX(rem(-250));
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
@@ -85,3 +102,20 @@
 /*//////////////////////////////////////
 終了
 /////////////////////////////////////*/
+
+//ホバーしたら下線が左から右へ
+.read-button button::after {
+  position: absolute;
+  bottom: rem(-3);
+  left: 0;
+  content: "";
+  width: 100%;
+  height: rem(1);
+  background: $blue2;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: transform 0.3s;
+}
+.read-button button:hover::after {
+  transform: scale(1, 1);
+}

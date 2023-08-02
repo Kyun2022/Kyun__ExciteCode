@@ -32,7 +32,6 @@
   gap: rem(20);
   row-gap: rem(15);
   @include mq(md) {
-    margin-top: initial;
     grid-template-columns: repeat(1, 1fr);
     gap: rem(20);
   }

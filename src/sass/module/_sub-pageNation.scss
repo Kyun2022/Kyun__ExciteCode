@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.sub-pageNation {
+}
+.sub-pageNation--right--md-none {
+  display: none;
+  @include mq(md) {
+    display: block;
+  }
+}

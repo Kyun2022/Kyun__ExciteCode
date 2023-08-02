@@ -31,6 +31,7 @@
   <script defer src="https://kit.fontawesome.com/990eeb164c.js" crossorigin="anonymous"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script defer src="./assets/js/jquery.inview.min.js"></script>
+  <script defer src="./assets/js/animation.js"></script>
   <script defer src="./assets/js/script.js"></script>
 </head>
 
@@ -60,7 +61,7 @@
       </div>
 
       <!-- ドロアー -->
-      <div class="header__drawer-menu drawer-menu drawer-menu--all-close js-header__drawer-menu">
+      <div class="header__drawer-menu drawer-menu js-header__drawer-menu">
         <h1 class="drawer__icon-sp "><a href="#"><img src="./assets/images/common/logo-blue.png" alt="青色のロゴ'ExciteCode'"></a></h1>
         <div class="drawer-menu__inner inner">
           <ul class="drawer-menu__items">
@@ -79,21 +80,21 @@
           </div>
         </div>
       </div>
-      <div class="drawer-menu__bg"></div>
+      <div class="header__bg js-header__bg"></div>
     </div>
   </header>
 
   <main>
     <section class="hero">
       <div class="hero__inner inner">
-        <div class="hero__title-container hero__right">
+        <div class="hero__title-container hero__right anime__fadeUp">
           <picture class="hero__image ">
             <source srcset="./assets/images/common/sub-about__hero-pc.jpg" media="(min-width: 768px)">
             <img src="./assets/images/common/sub-about__hero-sp.jpg" alt="">
           </picture>
           <div class="hero__container">
-            <h2 class="hero__title">about</h2>
-            <p class="hero__sub-title">私たちについて</p>
+            <h2 class="hero__title anime__slideTitle--left">about</h2>
+            <p class="hero__sub-title anime__slideTitle--left">私たちについて</p>
           </div>
         </div>
       </div>

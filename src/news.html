@@ -31,6 +31,7 @@
   <script defer src="https://kit.fontawesome.com/990eeb164c.js" crossorigin="anonymous"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script defer src="./assets/js/jquery.inview.min.js"></script>
+  <script defer src="./assets/js/animation.js"></script>
   <script defer src="./assets/js/script.js"></script>
 </head>
 
@@ -60,7 +61,7 @@
       </div>
 
       <!-- ドロアー -->
-      <div class="header__drawer-menu drawer-menu drawer-menu--all-close js-header__drawer-menu">
+      <div class="header__drawer-menu drawer-menu js-header__drawer-menu">
         <h1 class="drawer__icon-sp "><a href="#"><img src="./assets/images/common/logo-blue.png" alt="青色のロゴ'ExciteCode'"></a></h1>
         <div class="drawer-menu__inner inner">
           <ul class="drawer-menu__items">
@@ -79,21 +80,21 @@
           </div>
         </div>
       </div>
-      <div class="drawer-menu__bg"></div>
+      <div class="header__bg js-header__bg"></div>
     </div>
   </header>
 
   <main>
     <section class="hero">
       <div class="hero__inner inner">
-        <div class="hero__title-container hero__right">
-          <picture class="hero__image ">
+        <div class="hero__title-container hero__right anime__fadeUp">
+          <picture class="hero__image">
             <source srcset="./assets/images/common/sub-news__hero-pc.jpg" media="(min-width: 768px)">
             <img src="./assets/images/common/sub-news__hero-sp.jpg" alt="">
           </picture>
           <div class="hero__container">
-            <h2 class="hero__title">news</h2>
-            <p class="hero__sub-title">お知らせ</p>
+            <h2 class="hero__title anime__slideTitle--left">news</h2>
+            <p class="hero__sub-title anime__slideTitle--left">お知らせ</p>
           </div>
         </div>
       </div>
@@ -115,116 +116,116 @@
         </div>
         <div class="sub-news__container-right">
           <ul class="sub-news__timeline timeline">
-            <li class="timeline__item">
+            <li class="timeline__item anime__fadeDown">
               <a href="#" class="timeline__link">
                 <div class="timeline__container">
                   <time class="timeline__date-label" datetime="2022-09-02">2022.09.02</time>
-                  <p class="timeline__topics-label">トピックス</p>
-                  <p class="timeline__info-label">イベント・キャンペーン</p>
+                  <p class="timeline__topics-label timeline__topics-label--color">トピックス</p>
+                  <p class="timeline__info-label timeline__info-label--color">イベント・キャンペーン</p>
                 </div>
                 <div class="timeline__body">
                   <h3 class="timeline__title">2022年10月8日・9日・10日の3日間、試乗車フェアを開催します</h3>
                 </div>
               </a>
             </li>
-            <li class="timeline__item">
+            <li class="timeline__item anime__fadeDown">
               <a href="#" class="timeline__link">
                 <div class="timeline__container">
                   <time class="timeline__date-label" datetime="2022-08-23">2022.08.23</time>
-                  <p class="timeline__topics-label">トピックス</p>
-                  <p class="timeline__info-label">入庫車情報</p>
+                  <p class="timeline__topics-label timeline__topics-label--color">トピックス</p>
+                  <p class="timeline__info-label timeline__info-label--color">入庫車情報</p>
                 </div>
                 <div class="timeline__body">
                   <h3 class="timeline__title">【入庫車のご案内】メルセデスベンツG 350が入庫しました</h3>
                 </div>
               </a>
             </li>
-            <li class="timeline__item">
+            <li class="timeline__item anime__fadeDown">
               <a href="#" class="timeline__link">
                 <div class="timeline__container">
                   <time class="timeline__date-label" datetime="2022-08-07">2022.08.07</time>
-                  <p class="timeline__topics-label">トピックス</p>
+                  <p class="timeline__topics-label timeline__topics-label--color">トピックス</p>
                 </div>
                 <div class="timeline__body">
                   <h3 class="timeline__title">お盆休みのご案内</h3>
                 </div>
               </a>
             </li>
-            <li class="timeline__item">
+            <li class="timeline__item anime__fadeDown">
               <a href="#" class="timeline__link">
                 <div class="timeline__container">
                   <time class="timeline__date-label" datetime="2022-08-03">2022.08.03</time>
-                  <p class="timeline__topics-label">トピックス</p>
-                  <p class="timeline__info-label">入庫車情報</p>
+                  <p class="timeline__topics-label timeline__topics-label--color">トピックス</p>
+                  <p class="timeline__info-label timeline__info-label--color">入庫車情報</p>
                 </div>
                 <div class="timeline__body">
                   <h3 class="timeline__title">【入庫車のご案内】JEEPラングラー アンリミテッド サハラが入庫しました</h3>
                 </div>
               </a>
             </li>
-            <li class="timeline__item">
+            <li class="timeline__item anime__fadeDown">
               <a href="#" class="timeline__link">
                 <div class="timeline__container">
                   <time class="timeline__date-label" datetime="2022-09-02">2022.09.02</time>
-                  <p class="timeline__topics-label">トピックス</p>
+                  <p class="timeline__topics-label timeline__topics-label--color">トピックス</p>
                 </div>
                 <div class="timeline__body">
                   <h3 class="timeline__title">半導体不足は輸入車・輸入中古車にどう影響するか</h3>
                 </div>
               </a>
             </li>
-            <li class="timeline__item">
+            <li class="timeline__item anime__fadeDown">
               <a href="#" class="timeline__link">
                 <div class="timeline__container">
                   <time class="timeline__date-label" datetime="2022-09-02">2022.09.02</time>
-                  <p class="timeline__topics-label">トピックス</p>
-                  <p class="timeline__info-label">イベント・キャンペーン</p>
+                  <p class="timeline__topics-label timeline__topics-label--color">トピックス</p>
+                  <p class="timeline__info-label timeline__info-label--color">イベント・キャンペーン</p>
                 </div>
                 <div class="timeline__body">
                   <h3 class="timeline__title">2022年10月8日・9日・10日の3日間、試乗車フェアを開催します</h3>
                 </div>
               </a>
             </li>
-            <li class="timeline__item">
+            <li class="timeline__item anime__fadeDown">
               <a href="#" class="timeline__link">
                 <div class="timeline__container">
                   <time class="timeline__date-label" datetime="2022-08-23">2022.08.23</time>
-                  <p class="timeline__topics-label">トピックス</p>
-                  <p class="timeline__info-label">入庫車情報</p>
+                  <p class="timeline__topics-label timeline__topics-label--color">トピックス</p>
+                  <p class="timeline__info-label timeline__info-label--color">入庫車情報</p>
                 </div>
                 <div class="timeline__body">
                   <h3 class="timeline__title">【入庫車のご案内】メルセデスベンツG 350が入庫しました</h3>
                 </div>
               </a>
             </li>
-            <li class="timeline__item">
+            <li class="timeline__item anime__fadeDown">
               <a href="#" class="timeline__link">
                 <div class="timeline__container">
                   <time class="timeline__date-label" datetime="2022-08-07">2022.08.07</time>
-                  <p class="timeline__topics-label">トピックス</p>
+                  <p class="timeline__topics-label timeline__topics-label--color">トピックス</p>
                 </div>
                 <div class="timeline__body">
                   <h3 class="timeline__title">お盆休みのご案内</h3>
                 </div>
               </a>
             </li>
-            <li class="timeline__item">
+            <li class="timeline__item anime__fadeDown">
               <a href="#" class="timeline__link">
                 <div class="timeline__container">
                   <time class="timeline__date-label" datetime="2022-08-03">2022.08.03</time>
-                  <p class="timeline__topics-label">トピックス</p>
-                  <p class="timeline__info-label">入庫車情報</p>
+                  <p class="timeline__topics-label timeline__topics-label--color">トピックス</p>
+                  <p class="timeline__info-label timeline__info-label--color">入庫車情報</p>
                 </div>
                 <div class="timeline__body">
                   <h3 class="timeline__title">【入庫車のご案内】JEEPラングラー アンリミテッド サハラが入庫しました</h3>
                 </div>
               </a>
             </li>
-            <li class="timeline__item">
+            <li class="timeline__item anime__fadeDown">
               <a href="#" class="timeline__link">
                 <div class="timeline__container">
                   <time class="timeline__date-label" datetime="2022-08-03">2022.07.06</time>
-                  <p class="timeline__topics-label">トピックス</p>
+                  <p class="timeline__topics-label timeline__topics-label--color">トピックス</p>
                 </div>
                 <div class="timeline__body">
                   <h3 class="timeline__title">タイトルが46文字以降は点々で表示されますタイトルが46文字以降は点々で表示されますタイトル...</h3>
@@ -246,8 +247,6 @@
         </div>
       </div>
     </section>
-
-
 
     <!-- コンタクト -->
     <div class="contact top-contact">

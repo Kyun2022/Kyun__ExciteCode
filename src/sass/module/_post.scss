@@ -75,8 +75,9 @@
     font-size: rem(11);
   }
 }
-
 .post__title {
+  position: relative;
+  display: inline-block;
   margin-top: rem(12);
   color: $black;
   font-family: $jp-font;
@@ -87,6 +88,22 @@
     margin-top: rem(30);
     font-size: rem(24);
   }
+}
+//ホバーしたら下線が左から右へ
+.post__title::after {
+  position: absolute;
+  bottom: rem(-2);
+  left: 0;
+  content: "";
+  width: 100%;
+  height: rem(1);
+  background: $blue2;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: transform 0.3s;
+}
+.post__title:hover::after {
+  transform: scale(1, 1);
 }
 
 .post__text {

@@ -40,7 +40,21 @@
     padding: rem(4) rem(18) rem(4) 0;
   }
 }
-
+.timeline__date-label.timeline__date-label--main {
+  margin-top: rem(10);
+  padding: initial;
+  margin-top: auto;
+  @include mq(md) {
+    margin-top: rem(20);
+  }
+}
+.timeline__date-label.timeline__date-label--sub {
+  margin-top: auto;
+  padding: initial;
+  @include mq(md) {
+    margin-top: rem(14);
+  }
+}
 .timeline__topics-label {
   display: inline-block;
   color: $gray;
@@ -54,7 +68,9 @@
     font-size: rem(11);
   }
 }
-
+.timeline__topics-label--color {
+  background-color: $white3;
+}
 .timeline__info-label {
   margin-left: rem(5);
   color: $gray;
@@ -65,15 +81,68 @@
   background-color: $white;
   width: fit-content;
 }
-
+.timeline__info-label--color {
+  background-color: $white3;
+}
 .timeline__body {
   margin-top: rem(20);
 }
 
+.timeline__body--main {
+  display: flex;
+  flex-direction: column;
+  margin-left: initial;
+}
+.timeline__body--sub {
+  display: flex;
+  flex-direction: column;
+  margin-left: rem(18);
+  margin-top: initial;
+  width: calc((146 / 264) * 100%);
+}
+
 .timeline__title {
+  position: relative;
+  display: inline-block;
   color: $black;
   font-family: $jp-font;
   font-size: rem(14);
   font-weight: $medium;
   line-height: calc(28 / 14);
+}
+.timeline__title--main {
+  font-weight: $medium;
+  font-size: rem(18);
+  line-height: calc(30 / 18);
+  @include mq(md) {
+    font-size: rem(26);
+    line-height: calc(50 / 26);
+  }
+}
+.timeline__title--sub {
+  font-size: rem(12);
+  line-height: calc(24 / 12);
+}
+//ホバーしたら下線が左から右へ
+.timeline__title::after {
+  position: absolute;
+  bottom: rem(-2);
+  left: 0;
+  content: "";
+  width: 100%;
+  height: rem(1);
+  background: $blue2;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: transform 0.3s;
+}
+.timeline__title:hover::after {
+  transform: scale(1, 1);
+}
+
+.timeline__title--md-show {
+  display: block;
+  @include mq(md) {
+    display: none;
+  }
 }

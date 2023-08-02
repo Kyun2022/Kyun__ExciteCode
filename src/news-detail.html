@@ -31,6 +31,7 @@
   <script defer src="https://kit.fontawesome.com/990eeb164c.js" crossorigin="anonymous"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script defer src="./assets/js/jquery.inview.min.js"></script>
+  <script defer src="./assets/js/animation.js"></script>
   <script defer src="./assets/js/script.js"></script>
 </head>
 
@@ -38,7 +39,9 @@
   <!-- ヘッダー -->
   <header class="header sub-header js-header">
     <div class="header__inner">
-      <h1 class="header__icon-pc js-header__icon-pc"><a href="#"><img src="./assets/images/common/logo-white.png" alt="白色のロゴ'ExciteCode'"></a></h1>
+      <h1 class="header__icon-pc js-header__icon-pc">
+        <a href="./index.html"><img src="./assets/images/common/logo-white.png" alt="白色のロゴ'ExciteCode'"></a>
+      </h1>
       <nav class="header__nav header__nav--md-none">
         <ul class="header__items">
           <li class="header__item"><a href="./index.html">top</a></li>
@@ -58,7 +61,7 @@
       </div>
 
       <!-- ドロアー -->
-      <div class="header__drawer-menu drawer-menu drawer-menu--all-close js-header__drawer-menu">
+      <div class="header__drawer-menu drawer-menu js-header__drawer-menu">
         <h1 class="drawer__icon-sp "><a href="#"><img src="./assets/images/common/logo-blue.png" alt="青色のロゴ'ExciteCode'"></a></h1>
         <div class="drawer-menu__inner inner">
           <ul class="drawer-menu__items">
@@ -77,167 +80,131 @@
           </div>
         </div>
       </div>
-      <div class="drawer-menu__bg"></div>
+      <div class="header__bg js-header__bg"></div>
     </div>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero__inner inner">
-        <div class="hero__title-container hero__right">
-          <picture class="hero__image ">
-            <source srcset="./assets/images/common/sub-about__hero-pc.jpg" media="(min-width: 768px)">
-            <img src="./assets/images/common/sub-about__hero-sp.jpg" alt="">
-          </picture>
-          <div class="hero__container">
-            <h2 class="hero__title">about</h2>
-            <p class="hero__sub-title">私たちについて</p>
+
+
+    <div class="news-detail__breadcrumb breadcrumb">
+      <p class="breadcrumb-text">Top&nbsp;<span class="breadcrumb__line"></span>&nbsp;News<span class="breadcrumb__line"></span>&nbsp;記事タイトル</p>
+    </div>
+
+    <section class="news-detail">
+      <div class="news-detail__inner inner">
+        <div class="news-detail__container-left">
+          <div class="news-detail__top-container timeline">
+            <div class="timeline__container">
+              <p class="timeline__topics-label timeline__topics-label--color">トピックス</p>
+              <p class="timeline__info-label timeline__info-label--color">イベント・キャンペーン</p>
+            </div>
+            <div class="timeline__body timeline__body--main">
+              <h3 class="timeline__title timeline__title--main">2022年10月8日・9日・10日の3日<br class="timeline__title--md-show">間、試乗車フェアを開催します</h3>
+              <time class="timeline__date-label timeline__date-label--main" datetime="2022-09-02">2022.09.02</time>
+            </div>
+          </div>
+          <div class="news-detail__middle-container">
+            <figure class="news-detail__image">
+              <img src="./assets/images/common/sub-news__image_1.jpg" alt="">
+            </figure>
+            <h2 class="news-detail__title">ここに見出し2が入ります</h2>
+            <p class="news-detail__text">本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。</p>
+            <p class="news-detail__text">本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。</p>
+          </div>
+          <div class="news-detail__bottom-container">
+            <h3 class="news-detail__sub-title">ここに見出し3が入ります</h3>
+            <p class="news-detail__sub-text">本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。</p>
+            <p class="news-detail__text">本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。</p>
+          </div>
+          <ul class="news-detail__items">
+            <li class="news-detail__item"><a href="">リスト</a></li>
+            <li class="news-detail__item"><a href="">リストリスト</a></li>
+            <li class="news-detail__item"><a href="">リストリストリスト</a></li>
+          </ul>
+          <div class="news-detail__sub-pageNation sub-pageNation">
+            <div class="sub-pageNation--left more-button--next">
+              <button onclick="location.href='#'">前の記事へ</button>
+            </div>
+            <div class="sub-pageNation--right sub-pageNation--right--md-none more-button ">
+              <button onclick="location.href='#'">次の記事へ</button>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <div class="breadcrumb">
-      <p class="breadcrumb-text">Top&nbsp;<span class="breadcrumb__line"></span>&nbsp;About</p>
-    </div>
-
-    <div class="sub-about__tab tab">
-      <div class="tab__inner inner">
-        <p class="tab-text"><a href="">経営理念</a></p>
-        <p class="tab-text"><a href="">アクセス</a></p>
-        <p class="tab-text"><a href="">会社概要</a></p>
-      </div>
-    </div>
-
-    <div class="sub-about__title inner">
-      <h2 class="sub-about__title-text">国境を超え、メーカーを超え<br>「型にはまらない」あなただけの歓びを</h2>
-      <p class="sub-about__text">弊社は、輸入車選びのすべてを見つめ直し、新たなスタイルを提案するインポート・セレクト・ブランドです。<br>これまでの憧れだけや批評家の意見といったイメージで選ぶのではなく、オーナー様となる方がクルマから直接感じるリアルな感性を第一にした、最良の一台との出会いをコーディネートいたします。</p>
-    </div>
-
-    <section class="sub-about__philosophy philosophy">
-      <div class="philosophy__inner inner">
-        <picture class="philosophy__image">
-          <source srcset="./assets/images/common/sub-about-pc.jpg" media="(min-width: 768px)">
-          <img src="./assets/images/common/sub-about-sp.jpg" alt="代表取締役の田中太郎さんがスーツで腕組みをしながら仁王立ちしている様子">
-        </picture>
-        <div class="philosophy__container">
-          <div class="philosophy__section-title sectionTitle">
-            <p class="sectionTitle__sub-title">経営理念</p>
-            <h2 class="sectionTitle__title-text">philosophy</h2>
+        <aside class="news-detail__container-right">
+          <div class="news-detail__newsPost newsPost">
+            <div class="newsPost__main-container">
+              <h2 class="newsPost__title">最新記事</h2>
+              <div class="newsPost__sub-container">
+                <div class="newsPost__container timeline">
+                  <figure class="newsPost__mini-image">
+                    <img src="./assets/images/common/detail__image-pc_1.jpg" alt="">
+                  </figure>
+                  <div class="timeline__body timeline__body--sub">
+                    <h3 class="timeline__title timeline__title--sub">【入庫車のご案内】メルセデスベンツG 350が入庫しました</h3>
+                    <time class="timeline__date-label timeline__date-label--sub" datetime="2022-09-02">2022.09.02</time>
+                  </div>
+                </div>
+                <div class="newsPost__container timeline">
+                  <figure class="newsPost__mini-image">
+                    <img src="./assets/images/common/detail__image-pc_2.jpg" alt="">
+                  </figure>
+                  <div class="timeline__body timeline__body--sub">
+                    <h3 class="timeline__title timeline__title--sub">【入庫車のご案内】メルセデスベンツG 350が入庫しました</h3>
+                    <time class="timeline__date-label timeline__date-label--sub" datetime="2022-09-02">2022.09.02</time>
+                  </div>
+                </div>
+                <div class="newsPost__container timeline">
+                  <figure class="newsPost__mini-image">
+                    <img src="./assets/images/common/detail__image-pc_3.jpg" alt="">
+                  </figure>
+                  <div class="timeline__body timeline__body--sub">
+                    <h3 class="timeline__title timeline__title--sub">【入庫車のご案内】メルセデスベンツG 350が入庫しました</h3>
+                    <time class="timeline__date-label timeline__date-label--sub" datetime="2022-09-02">2022.09.02</time>
+                  </div>
+                </div>
+                <div class="newsPost__container timeline">
+                  <figure class="newsPost__mini-image">
+                    <img src="./assets/images/common/detail__image-pc_4.jpg" alt="">
+                  </figure>
+                  <div class="timeline__body timeline__body--sub">
+                    <h3 class="timeline__title timeline__title--sub">【入庫車のご案内】メルセデスベンツG 350が入庫しました</h3>
+                    <time class="timeline__date-label timeline__date-label--sub" datetime="2022-09-02">2022.09.02</time>
+                  </div>
+                </div>
+                <div class="newsPost__container timeline">
+                  <figure class="newsPost__mini-image">
+                    <img src="./assets/images/common/detail__image-pc_3.jpg" alt="">
+                  </figure>
+                  <div class="timeline__body timeline__body--sub">
+                    <h3 class="timeline__title timeline__title--sub">【入庫車のご案内】メルセデスベンツG 350が入庫しました</h3>
+                    <time class="timeline__date-label timeline__date-label--sub" datetime="2022-09-02">2022.09.02</time>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="philosophy__body">
-            <p class="philosophy__text">「お客様とは一生涯のお付き合い」をモットーとし、同時に社員一人一人が責任と誇り、使命感を持ち日々の仕事にやりがいと喜びを感じることができる会社を目指します。そういう「社員満足」があってこそ、本当の「お客様に満足」が可能になり、そしてお客様のご満足がさらに社員の満足を高めてくれるからです。心の豊かさは楽とかゆとりとかいうより仕事の充実感に求めねばなりません。我々は現状に満足することなく挑戦し続けます。</p>
-            <p class="philosophy__sub-text">代表取締役&emsp;田中太郎</p>
+          <div class="newsPost__main-container newsPost__main-container--bottom">
+            <h2 class="newsPost__title">アーカイブ</h2>
+            <ul class="news-detail__archive archive">
+              <li class="archive__list">2022年9月</li>
+              <li class="archive__list">2022年8月</li>
+              <li class="archive__list">2022年7月</li>
+            </ul>
           </div>
-        </div>
+          <div class="newsPost__main-container newsPost__main-container--bottom">
+            <h2 class="newsPost__title">カテゴリー</h2>
+            <ul class="news-detail__category category">
+              <li class="category__item">トピックス</li>
+              <li class="category__item">イベント&nbsp;&#183;&nbsp;キャンペーン</li>
+              <li class="category__item">入庫車情報</li>
+            </ul>
+          </div>
+        </aside>
       </div>
     </section>
 
-    <section class="sub-about__access access">
-      <div class="access__inner inner">
-        <div class="access__section-title sectionTitle">
-          <p class="sectionTitle__sub-title">アクセス</p>
-          <h2 class="sectionTitle__title-text">Access</h2>
-        </div>
-        <div class="access__address-block">
-          <p class="access__address-number">〒000&#045;0000</p>
-          <p class="access__address">〇〇県△△市□□区▲▲町0-0-0</p>
-        </div>
-        <div class="access__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8157.64424604507!2d140.8760938583093!3d38.25491258014729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8a281662e35bed%3A0x16365c7100e6a26!2z44Km44Kn44K544OG44Kj44Oz44Ob44OG44Or5LuZ5Y-w!5e0!3m2!1sja!2sjp!4v1690556041866!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
-    </section>
 
-    <section class="sub-about__profile profile">
-      <div class="profile__inner inner">
-        <div class="profile__title sectionTitle">
-          <p class="sectionTitle__sub-title">会社概要</p>
-          <h2 class="sectionTitle__title-text">company&nbsp;<span class="sectionTitle__title-text--firstLetter">profile</span></h2>
-        </div>
-        <ul class="profile__items">
-          <li class="profile__item">
-            <dl>
-              <dt class="profile__title">会社名</dt>
-              <dd class="profile__text">株式会社Excitecode</dd>
-            </dl>
-          </li>
-          <li class="profile__item">
-            <dl>
-              <dt class="profile__title">所在地</dt>
-              <dd class="profile__text profile__text--address">
-                <p>〒000-0000</p>
-                <p>〇〇県△△市□□区▲▲町0-0-0</p>
-              </dd>
-            </dl>
-          </li>
-          <li class="profile__item">
-            <dl>
-              <dt class="profile__title">設立</dt>
-              <dd class="profile__text">2015年12月10日</dd>
-            </dl>
-          </li>
-          <li class="profile__item">
-            <dl>
-              <dt class="profile__title">代表取締役</dt>
-              <dd class="profile__text">田中&emsp;太郎</dd>
-            </dl>
-          </li>
-          <li class="profile__item">
-            <dl>
-              <dt class="profile__title">事業内容</dt>
-              <dd class="profile__text profile__text--detail">
-                <p>自動車販売（新車、中古車）古物No.第00000000号</p>
-                <p>自動車整備（国産車、輸入車）<br class="profile__text--md-show">陸運局認証工場&emsp;認証No.0-0000</p>
-                <p>輸入車販売（自動車、自動車関連部品）</p>
-                <p>保険代理店<br class="profile__text--md-show">（ABC損害保険株式会社、DFG損害保険株式会社）</p>
-              </dd>
-            </dl>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <div class="subSwiper sub-about__slider sub-slider js-sub-about__slider">
-      <div class="swiper-wrapper sub-slider__items">
-        <div class="swiper-slide sub-slider__item">
-          <figure class="sub-slider__image"><img src="./assets/images/common/slider-pc_1.jpg" alt=""></figure>
-        </div>
-        <div class="swiper-slide sub-slider__item">
-          <figure class="sub-slider__image"><img src="./assets/images/common/slider-pc_2.jpg" alt=""></figure>
-        </div>
-        <div class="swiper-slide sub-slider__item">
-          <figure class="sub-slider__image"><img src="./assets/images/common/slider-pc_3.jpg" alt=""></figure>
-        </div>
-        <div class="swiper-slide sub-slider__item">
-          <figure class="sub-slider__image"><img src="./assets/images/common/slider-pc_4.jpg" alt=""></figure>
-        </div>
-        <div class="swiper-slide sub-slider__item">
-          <figure class="sub-slider__image"><img src="./assets/images/common/slider-pc_5.jpg" alt=""></figure>
-        </div>
-        <div class="swiper-slide sub-slider__item">
-          <figure class="sub-slider__image"><img src="./assets/images/common/slider-pc_6.jpg" alt=""></figure>
-        </div>
-        <div class="swiper-slide sub-slider__item">
-          <figure class="sub-slider__image"><img src="./assets/images/common/slider-pc_1.jpg" alt=""></figure>
-        </div>
-        <div class="swiper-slide sub-slider__item">
-          <figure class="sub-slider__image"><img src="./assets/images/common/slider-pc_2.jpg" alt=""></figure>
-        </div>
-        <div class="swiper-slide sub-slider__item">
-          <figure class="sub-slider__image"><img src="./assets/images/common/slider-pc_3.jpg" alt=""></figure>
-        </div>
-        <div class="swiper-slide sub-slider__item">
-          <figure class="sub-slider__image"><img src="./assets/images/common/slider-pc_4.jpg" alt=""></figure>
-        </div>
-        <div class="swiper-slide sub-slider__item">
-          <figure class="sub-slider__image"><img src="./assets/images/common/slider-pc_5.jpg" alt=""></figure>
-        </div>
-        <div class="swiper-slide sub-slider__item">
-          <figure class="sub-slider__image"><img src="./assets/images/common/slider-pc_6.jpg" alt=""></figure>
-        </div>
-      </div>
-    </div>
 
 
     <!-- コンタクト -->

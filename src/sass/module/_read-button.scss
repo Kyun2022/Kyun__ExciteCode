@@ -29,6 +29,7 @@
   right: rem(-10);
 }
 
+//ホバーしたら下線が左から右へ
 .read-button button::after {
   position: absolute;
   bottom: rem(-3);

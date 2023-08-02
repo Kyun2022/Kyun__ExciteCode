@@ -1,0 +1,52 @@
+@use "global" as *;
+
+.newsPost {
+}
+
+.newsPost__title {
+  padding: rem(15) rem(18);
+  background-color: $blue3;
+  color: $white;
+  width: 100%;
+  max-width:100%;
+}
+.newsPost__main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsPost__main-container--bottom {
+  margin-top: rem(40);
+}
+.newsPost__sub-container {
+  padding: rem(18) rem(18) 0;
+}
+.newsPost__container {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid $white5;
+  padding-bottom: rem(18);
+}
+.newsPost__container:not(:first-child) {
+  padding-top: rem(18);
+  padding-bottom: rem(18);
+}
+.newsPost__mini-image {
+  position: relative;
+  width: 100%;
+  max-width: calc((100 / 264) * 100%);
+}
+.newsPost__mini-image::before {
+  content: "";
+  display: block;
+  padding-top: calc((100 / 100) * 100%);
+}
+.newsPost__mini-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
