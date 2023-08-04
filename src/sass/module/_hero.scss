@@ -1,9 +1,9 @@
 @use "global" as *;
 
 .hero {
-  margin-top: rem(30);
+  padding-top: rem(110);
   @include mq(md) {
-    margin-top: rem(156);
+    padding-top: rem(246);
   }
 }
 

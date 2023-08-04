@@ -1,6 +1,7 @@
-@use 'global' as *;
+@use "global" as *;
 
-.sub-header{
+.sub-header {
   background-color: $white;
-  position: sticky;
 }
+
+

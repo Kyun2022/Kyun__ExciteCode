@@ -1,8 +1,5 @@
 @use "global" as *;
 
-.more-button {
-}
-
 .more-button button,
 .more-button--next button {
   display: inline-block;
@@ -21,6 +18,14 @@
 }
 .more-button--next button {
   text-align: right;
+}
+
+.more-button--wide button {
+  text-align: center;
+}
+.more-button--contact button {
+  width: rem(260);
+  text-align: center;
 }
 .more-button button:hover {
   background-color: $blue;
@@ -44,6 +49,9 @@
   border-top: 2px solid $white;
   margin-right: rem(-5);
 }
+/*//////////////////////////////////////
+next
+/////////////////////////////////////*/
 
 .more-button--next button:hover {
   background-color: $blue;
@@ -67,3 +75,167 @@
   border-bottom: 2px solid $white;
   margin-left: rem(-5);
 }
+
+/*//////////////////////////////////////
+wide
+/////////////////////////////////////*/
+.more-button--wide button {
+  width: rem(285);
+}
+.more-button--wide button:hover {
+  background-color: $white;
+  color: $blue;
+}
+
+.more-button--wide button:before {
+  position: absolute;
+  border-left: 2px solid $blue;
+  border-bottom: 2px solid $blue;
+  top: rem(18);
+  content: "";
+  width: rem(8);
+  height: rem(8);
+  left: rem(70);
+  transform: rotate(45deg) translateX(0);
+  border-right: initial;
+  border-top: initial;
+}
+
+.more-button--wide button:hover:before {
+  border-left: 2px solid $blue;
+  border-bottom: 2px solid $blue;
+  margin-left: rem(-5);
+  border-right: initial;
+  border-top: initial;
+}
+
+/*//////////////////////////////////////
+contact
+/////////////////////////////////////*/
+.more-button--contact button {
+  padding: rem(12);
+}
+
+.more-button--contact button:hover {
+  background-color: $white;
+  color: $blue;
+}
+
+.more-button--contact button:before {
+  position: absolute;
+  border-left: initial;
+  border-bottom: initial;
+  top: rem(18);
+  content: "";
+  width: rem(8);
+  height: rem(8);
+  left: rem(70);
+  transform: rotate(45deg) translateX(0);
+  border-right: initial;
+  border-top: initial;
+}
+
+.more-button--contact button:hover:before {
+  border-left: initial;
+  border-bottom: initial;
+  margin-left: initial;
+  border-right: initial;
+  border-top: initial;
+}
+/*//////////////////////////////////////
+thanks
+/////////////////////////////////////*/
+
+.more-button--thanks button {
+  font-size: rem(18);
+  font-weight: $medium;
+  padding: rem(12);
+  width: 100%;
+  max-width: rem(275);
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  background-color: $blue;
+  color: $white;
+  @include mq(md) {
+    padding: rem(20);
+    max-width: rem(460);
+  }
+}
+
+.more-button--thanks button:hover {
+  background-color: $blue;
+  color: $white;
+}
+
+.more-button--thanks button:before {
+  position: absolute;
+  border-left: initial;
+  border-bottom: initial;
+  display: inline-block;
+  top: rem(18);
+  content: "";
+  width: rem(8);
+  height: rem(8);
+  left: rem(170);
+  transform: rotate(45deg) translateX(0);
+  border-left: 2px solid $white;
+  border-bottom: 2px solid $white;
+  @include mq(md) {
+    top: rem(30);
+  }
+}
+
+.more-button--thanks button:hover:before {
+  border-left: 2px solid $white;
+  border-bottom: 2px solid $white;
+  margin-left: rem(-5);
+  border-right: initial;
+  border-top: initial;
+}
+
+/*//////////////////////////////////////
+404
+/////////////////////////////////////*/
+
+.more-button--404 button {
+  font-size: rem(14);
+  font-weight: $medium;
+  padding: rem(12) rem(12) rem(12) rem(25);
+  width: 100%;
+  max-width: rem(145);
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  background-color: transparent;
+  color: $white;
+  border: 1px solid $white;
+}
+
+.more-button--404 button:hover {
+  background-color: transparent;
+  color: $white;
+}
+.more-button--404 button:before {
+  border-top: initial;
+  border-right: initial;
+  display: inline-block;
+  position: absolute;
+  content: "";
+  top: rem(18);
+  left: rem(30);
+  width: rem(8);
+  height: rem(8);
+  transform: rotate(45deg) translateX(0);
+  border-left: 2px solid $white;
+  border-bottom: 2px solid $white;
+}
+
+.more-button--404 button:hover:before {
+  border-left: 2px solid $white;
+  border-bottom: 2px solid $white;
+  margin-left: rem(-5);
+  border-right: initial;
+  border-top: initial;
+}
+

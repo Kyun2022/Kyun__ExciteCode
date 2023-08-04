@@ -1,0 +1,117 @@
+@use "global" as *;
+
+.form__company {
+}
+
+.form__title {
+  display: flex;
+  flex-direction: column;
+  @include mq(md) {
+    gap: 0.5em;
+    flex-direction: row;
+  }
+}
+
+.form__title-text {
+  color: $black;
+  font-family: $jp-font;
+  font-weight: $medium;
+  font-size: rem(15);
+}
+.form__title-text.form__title-text--normal {
+  font-weight: $normal;
+}
+
+.form__input,
+.form__select-text,
+.form__input-textarea {
+  margin-top: rem(15);
+}
+.form__input-text {
+  width: 100%;
+  padding: rem(14.5);
+  border: 1px solid $white4;
+  border-radius: rem(5);
+}
+
+.form__name,
+.form__telephone,
+.form__mail,
+.form__select,
+.form__textarea {
+  margin-top: rem(40.5);
+}
+
+select {
+  appearance: none;
+  display: block;
+  width: 100%;
+  border: 1px solid $white4;
+  border-radius: rem(5);
+  padding: rem(15);
+  width: 100%;
+}
+.form__select-parent {
+  display: block;
+  position: relative;
+}
+.form__select-parent::after {
+  position: absolute;
+  top: rem(25);
+  right: rem(15);
+  content: "";
+  background-image: url(/assets/images/common/arrow-dropDown.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: rem(12);
+  height: rem(6);
+  pointer-events: none;
+}
+.form__select-text {
+  color: $black;
+  font-family: $jp-font;
+  font-size: rem(14);
+  font-weight: $normal;
+}
+
+.form__input-textarea {
+  padding: rem(15);
+  border: 1px solid $white4;
+  width: 100%;
+  height: rem(335);
+  border-radius: rem(5);
+  resize: none;
+}
+
+.form__button {
+  text-align: center;
+  margin-top: rem(31.5);
+}
+
+.form__button-text {
+  color: $black;
+  font-family: $jp-font;
+  font-size: rem(14);
+  font-weight: $medium;
+  position: relative;
+  display: inline-block;
+}
+
+.form__button-text::before {
+  position: absolute;
+  top: 0;
+  left: rem(-20);
+  content: "";
+  display: inline-block;
+  width: rem(17);
+  height: rem(17);
+  border: 1px solid $white4;
+}
+
+input::placeholder {
+  color: $gray2;
+  font-family: $jp-font;
+  font-size: rem(14);
+  font-weight: $normal;
+}

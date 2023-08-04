@@ -1,23 +1,25 @@
 @use "global" as *;
 
 .news-detail {
-  margin-top: rem(30);
+  padding-top: rem(110);
   @include mq(md) {
-    margin-top: rem(60);
+    padding-top: rem(240);
     padding-bottom: rem(119);
   }
 }
 .news-detail__breadcrumb {
   @include mq(md) {
-    margin-top: rem(100);
+    margin-top: rem(20);
   }
 }
 .news-detail__inner {
   display: flex;
   flex-direction: column;
+  margin-top: rem(30);
   width: 100%;
   max-width: rem(500);
   @include mq(md) {
+    margin-top: rem(60);
     flex-direction: row;
   }
 }
@@ -174,7 +176,6 @@
 }
 
 .news-detail__archive {
-
   padding: rem(18) rem(18) 0;
 }
 

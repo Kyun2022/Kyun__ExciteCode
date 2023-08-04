@@ -1,0 +1,135 @@
+@use "global" as *;
+
+.works-detail {
+  padding-top: rem(110);
+  padding-bottom: rem(80);
+  @include mq(md) {
+    padding-top: rem(240);
+    padding-bottom: rem(119);
+  }
+}
+
+.works-detail__inner.inner {
+  width: 100%;
+  max-width: 100%;
+  padding-right: rem(30);
+  padding-left: rem(30);
+  @include mq(md) {
+    padding-right: rem(10);
+    padding-left: rem(10);
+    max-width: rem(840);
+  }
+}
+
+.works-detail__item {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.works-detail__image {
+  position: relative;
+  margin-top: rem(34);
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}
+
+.works-detail__image::before {
+  content: "";
+  display: block;
+  padding-top: calc((176 / 315) * 100%);
+  @include mq(md) {
+    padding-top: calc((471 / 840) * 100%);
+  }
+}
+.works-detail__image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.works-detail__body {
+  display: flex;
+  flex-direction: column;
+}
+.works-detail__body--bottom {
+  display: flex;
+  flex-direction: column;
+  padding: rem(40) 0 0;
+  @include mq(md) {
+    padding: rem(40) rem(80) 0;
+  }
+}
+
+.works-detail__label {
+  display: inline-block;
+  width: fit-content;
+  color: $gray;
+  font-family: $jp-font;
+  font-size: rem(10);
+  font-weight: $medium;
+  padding: rem(5) rem(15);
+  background: $white3;
+  @include mq(md) {
+    padding: rem(4) rem(18);
+    font-size: rem(11);
+  }
+}
+
+.works-detail__title {
+  position: relative;
+  display: inline-block;
+  margin-top: rem(12);
+  color: $black;
+  font-family: $jp-font;
+  font-size: rem(14);
+  font-weight: $medium;
+  line-height: calc(28 / 14);
+  @include mq(md) {
+    margin-top: rem(30);
+    font-size: rem(24);
+  }
+}
+
+.works-detail__date {
+  margin-top: rem(10);
+  color: $gray2;
+  font-family: $jp-font;
+  font-size: rem(10);
+  font-weight: $bold;
+  @include mq(md) {
+    margin-top: rem(20);
+    font-size: rem(12);
+  }
+}
+
+.works-detail__text {
+  display: block;
+  color: $gray;
+  font-family: $jp-font;
+  font-weight: $regular;
+  font-size: rem(14);
+  line-height: calc(32 / 14);
+  @include mq(md) {
+    font-size: rem(16);
+    line-height: calc(38 / 16);
+  }
+}
+
+.works-detail__text + .works-detail__text {
+  margin-top: rem(30);
+  @include mq(md) {
+    margin-top: initial;
+  }
+}
+
+.works-detail__button {
+  margin-top: rem(40);
+  text-align: center;
+  @include mq(md) {
+    margin-top: rem(60);
+  }
+}

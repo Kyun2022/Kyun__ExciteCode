@@ -19,17 +19,6 @@ Common
     });
   });
 
-  // ハンバーガーメニューのクリックイベント
-  // $(".js-header__hamburger").click(function () {
-  //   //ボタンがクリックされたら
-  //   $(".js-header__drawer-menu").toggleClass("panelActive"); //ナビゲーションにpanelActiveクラスを付与
-  //   $(".js-header__bg").toggleClass("circleActive"); //丸背景にcircleActiveクラスを付与
-  // });
-  // $(".js-drawer-menu").click(function () {
-  //   //ナビゲーションリンクがクリックされたら
-  //   $(".js-header__drawer-menu").removeClass("panelActive"); //ナビゲーションにpanelActiveクラスを付与
-  //   $(".js-header__bg").removeClass("circleActive"); //丸背景にcircleActiveクラスを付与
-  // });
 
   /*//////////////////////////////////////
 TOP

@@ -17,6 +17,7 @@
 }
 .footer__items {
   padding-left: rem(10);
+  overflow-x: hidden;
   @include mq(md) {
     padding-left: initial;
     width: calc((130 / 1100) * 100%);
@@ -29,6 +30,7 @@
   font-family: $en-font2;
   font-weight: $normal;
   padding-bottom: rem(12);
+
   @include mq(md) {
     padding-bottom: rem(10);
     line-height: 1;

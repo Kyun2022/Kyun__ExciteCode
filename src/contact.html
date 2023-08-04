@@ -31,6 +31,7 @@
   <script defer src="https://kit.fontawesome.com/990eeb164c.js" crossorigin="anonymous"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script defer src="./assets/js/jquery.inview.min.js"></script>
+  <script defer src="./assets/js/animation.js"></script>
   <script defer src="./assets/js/script.js"></script>
 </head>
 
@@ -46,7 +47,7 @@
           <li class="header__item"><a href="./service.html">service</a></li>
           <li class="header__item"><a href="./works.html">works</a></li>
           <li class="header__item"><a href="./news.html">news</a></li>
-          <li class="header__item header__button"><a href=""><i class="fa-regular fa-envelope header__button-icon"></i>contact</a></li>
+          <li class="header__item header__button"><a href="./contact.html"><i class="fa-regular fa-envelope header__button-icon"></i>contact</a></li>
         </ul>
       </nav>
 
@@ -84,178 +85,94 @@
   <main>
     <section class="hero">
       <div class="hero__inner inner">
-        <div class="hero__title-container hero__right">
+        <div class="hero__title-container hero__right anime__fadeUp">
           <picture class="hero__image ">
-            <source srcset="./assets/images/common/sub-about__hero-pc.jpg" media="(min-width: 768px)">
-            <img src="./assets/images/common/sub-about__hero-sp.jpg" alt="">
+            <source srcset="./assets/images/common/sub-contact__hero-pc.jpg" media="(min-width: 768px)">
+            <img src="./assets/images/common/sub-contact__hero-sp.jpg" alt="">
           </picture>
           <div class="hero__container">
-            <h2 class="hero__title">about</h2>
-            <p class="hero__sub-title">私たちについて</p>
+            <h2 class="hero__title anime__slideTitle--left">contact</h2>
+            <p class="hero__sub-title anime__slideTitle--left">お問い合わせ</p>
           </div>
         </div>
       </div>
     </section>
 
     <div class="breadcrumb">
-      <p class="breadcrumb-text">Top&nbsp;<span class="breadcrumb__line"></span>&nbsp;About</p>
+      <p class="breadcrumb-text">Top&nbsp;<span class="breadcrumb__line"></span>&nbsp;Contact</p>
     </div>
 
-    <div class="sub-about__tab tab">
-      <div class="tab__inner inner">
-        <p class="tab-text"><a href="">経営理念</a></p>
-        <p class="tab-text"><a href="">アクセス</a></p>
-        <p class="tab-text"><a href="">会社概要</a></p>
-      </div>
-    </div>
-
-    <div class="sub-about__title inner">
-      <h2 class="sub-about__title-text">国境を超え、メーカーを超え<br>「型にはまらない」あなただけの歓びを</h2>
-      <p class="sub-about__text">弊社は、輸入車選びのすべてを見つめ直し、新たなスタイルを提案するインポート・セレクト・ブランドです。<br>これまでの憧れだけや批評家の意見といったイメージで選ぶのではなく、オーナー様となる方がクルマから直接感じるリアルな感性を第一にした、最良の一台との出会いをコーディネートいたします。</p>
-    </div>
-
-    <section class="sub-about__philosophy philosophy">
-      <div class="philosophy__inner inner">
-        <picture class="philosophy__image">
-          <source srcset="./assets/images/common/sub-about-pc.jpg" media="(min-width: 768px)">
-          <img src="./assets/images/common/sub-about-sp.jpg" alt="代表取締役の田中太郎さんがスーツで腕組みをしながら仁王立ちしている様子">
-        </picture>
-        <div class="philosophy__container">
-          <div class="philosophy__section-title sectionTitle">
-            <p class="sectionTitle__sub-title">経営理念</p>
-            <h2 class="sectionTitle__title-text">philosophy</h2>
-          </div>
-          <div class="philosophy__body">
-            <p class="philosophy__text">「お客様とは一生涯のお付き合い」をモットーとし、同時に社員一人一人が責任と誇り、使命感を持ち日々の仕事にやりがいと喜びを感じることができる会社を目指します。そういう「社員満足」があってこそ、本当の「お客様に満足」が可能になり、そしてお客様のご満足がさらに社員の満足を高めてくれるからです。心の豊かさは楽とかゆとりとかいうより仕事の充実感に求めねばなりません。我々は現状に満足することなく挑戦し続けます。</p>
-            <p class="philosophy__sub-text">代表取締役&emsp;田中太郎</p>
-          </div>
+    <div class="sub-contact">
+      <div class="sub-contact__inner inner">
+        <div class="sub-contact__title">
+          <p class="sub-contact__title-text">弊社へのお問い合わせは<br>下記フォームより受け付けております。<br>担当者が確認後、折り返しご連絡させていただきます。</p>
         </div>
-      </div>
-    </section>
-
-    <section class="sub-about__access access">
-      <div class="access__inner inner">
-        <div class="access__section-title sectionTitle">
-          <p class="sectionTitle__sub-title">アクセス</p>
-          <h2 class="sectionTitle__title-text">Access</h2>
-        </div>
-        <div class="access__address-block">
-          <p class="access__address-number">〒000&#045;0000</p>
-          <p class="access__address">〇〇県△△市□□区▲▲町0-0-0</p>
-        </div>
-        <div class="access__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8157.64424604507!2d140.8760938583093!3d38.25491258014729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8a281662e35bed%3A0x16365c7100e6a26!2z44Km44Kn44K544OG44Kj44Oz44Ob44OG44Or5LuZ5Y-w!5e0!3m2!1sja!2sjp!4v1690556041866!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
-    </section>
-
-    <section class="sub-about__profile profile">
-      <div class="profile__inner inner">
-        <div class="profile__title sectionTitle">
-          <p class="sectionTitle__sub-title">会社概要</p>
-          <h2 class="sectionTitle__title-text">company&nbsp;<span class="sectionTitle__title-text--firstLetter">profile</span></h2>
-        </div>
-        <ul class="profile__items">
-          <li class="profile__item">
-            <dl>
-              <dt class="profile__title">会社名</dt>
-              <dd class="profile__text">株式会社Excitecode</dd>
-            </dl>
-          </li>
-          <li class="profile__item">
-            <dl>
-              <dt class="profile__title">所在地</dt>
-              <dd class="profile__text profile__text--address">
-                <p>〒000-0000</p>
-                <p>〇〇県△△市□□区▲▲町0-0-0</p>
-              </dd>
-            </dl>
-          </li>
-          <li class="profile__item">
-            <dl>
-              <dt class="profile__title">設立</dt>
-              <dd class="profile__text">2015年12月10日</dd>
-            </dl>
-          </li>
-          <li class="profile__item">
-            <dl>
-              <dt class="profile__title">代表取締役</dt>
-              <dd class="profile__text">田中&emsp;太郎</dd>
-            </dl>
-          </li>
-          <li class="profile__item">
-            <dl>
-              <dt class="profile__title">事業内容</dt>
-              <dd class="profile__text profile__text--detail">
-                <p>自動車販売（新車、中古車）古物No.第00000000号</p>
-                <p>自動車整備（国産車、輸入車）<br class="profile__text--md-show">陸運局認証工場&emsp;認証No.0-0000</p>
-                <p>輸入車販売（自動車、自動車関連部品）</p>
-                <p>保険代理店<br class="profile__text--md-show">（ABC損害保険株式会社、DFG損害保険株式会社）</p>
-              </dd>
-            </dl>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <div class="subSwiper sub-about__slider sub-slider js-sub-about__slider">
-      <div class="swiper-wrapper sub-slider__items">
-        <div class="swiper-slide sub-slider__item">
-          <figure class="sub-slider__image"><img src="./assets/images/common/slider-pc_1.jpg" alt=""></figure>
-        </div>
-        <div class="swiper-slide sub-slider__item">
-          <figure class="sub-slider__image"><img src="./assets/images/common/slider-pc_2.jpg" alt=""></figure>
-        </div>
-        <div class="swiper-slide sub-slider__item">
-          <figure class="sub-slider__image"><img src="./assets/images/common/slider-pc_3.jpg" alt=""></figure>
-        </div>
-        <div class="swiper-slide sub-slider__item">
-          <figure class="sub-slider__image"><img src="./assets/images/common/slider-pc_4.jpg" alt=""></figure>
-        </div>
-        <div class="swiper-slide sub-slider__item">
-          <figure class="sub-slider__image"><img src="./assets/images/common/slider-pc_5.jpg" alt=""></figure>
-        </div>
-        <div class="swiper-slide sub-slider__item">
-          <figure class="sub-slider__image"><img src="./assets/images/common/slider-pc_6.jpg" alt=""></figure>
-        </div>
-        <div class="swiper-slide sub-slider__item">
-          <figure class="sub-slider__image"><img src="./assets/images/common/slider-pc_1.jpg" alt=""></figure>
-        </div>
-        <div class="swiper-slide sub-slider__item">
-          <figure class="sub-slider__image"><img src="./assets/images/common/slider-pc_2.jpg" alt=""></figure>
-        </div>
-        <div class="swiper-slide sub-slider__item">
-          <figure class="sub-slider__image"><img src="./assets/images/common/slider-pc_3.jpg" alt=""></figure>
-        </div>
-        <div class="swiper-slide sub-slider__item">
-          <figure class="sub-slider__image"><img src="./assets/images/common/slider-pc_4.jpg" alt=""></figure>
-        </div>
-        <div class="swiper-slide sub-slider__item">
-          <figure class="sub-slider__image"><img src="./assets/images/common/slider-pc_5.jpg" alt=""></figure>
-        </div>
-        <div class="swiper-slide sub-slider__item">
-          <figure class="sub-slider__image"><img src="./assets/images/common/slider-pc_6.jpg" alt=""></figure>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- コンタクト -->
-    <div class="contact top-contact">
-      <div class="contact__inner">
-        <figure class="contact__image"><img src="./assets/images/common/contact.jpg" alt=""></figure>
-        <div class="contact__body">
-          <div class="contact__meta">
-            <p class="contact__title">輸入車の購入や修理のご相談など<br>お気軽にお問い合わせください。</p>
-            <div class="contact__button-block">
-              <div class="contact__button"><a href="">
-                  <i class="fa-regular fa-envelope contact__button--letter-icon"></i>お問い合わせ</a>
-              </div>
-              <div class="contact__button contact__button--telephone"><a href="">
-                  <i class="fa-solid fa-phone-flip contact__button--telephone-icon"></i>0000&#045;000&#045;000</a>
-              </div>
-              <p class="contact__text">受付時間&nbsp;&#58;&nbsp;火曜日を除く&nbsp;10&#58;00〜18&#58;00</p>
+        <div class="sub-contact__form form">
+          <form>
+            <div class="form__company">
+              <dl>
+                <dt class="form__title">
+                  <p class="form__title-text">会社名</p>
+                  <span class="form__title-effect"></span>
+                  <p class="form__title-text form__title-text--normal">個人の場合は「個人」と入力してください</p>
+                </dt>
+                <dd class="form__input">
+                  <input type="text" class="form__input-text" placeholder="例&#041;&nbsp;株式会社ABC" required>
+                </dd>
+              </dl>
             </div>
+            <div class="form__name">
+              <dl>
+                <dt class="form__title">
+                  <p class="form__title-text">ご担当者名</p>
+                  <p class="form__title-text">個人の場合は氏名を入力してください</p>
+                </dt>
+                <dd class="form__input">
+                  <input type="text" class="form__input-text" placeholder="例&#041;&nbsp;輸入車&emsp;太郎" required>
+                </dd>
+              </dl>
+            </div>
+            <div class="form__telephone">
+              <dl>
+                <dt class="form__title">
+                  <p class="form__title-text">電話番号</p>
+                </dt>
+                <dd class="form__input">
+                  <input type="text" class="form__input-text" placeholder="例）022-0000-0000" required>
+                </dd>
+              </dl>
+            </div>
+            <div class="form__mail">
+              <dl>
+                <dt class="form__title">
+                  <p class="form__title-text">メールアドレス</p>
+                </dt>
+                <dd class="form__input">
+                  <input type="email" class="form__input-text" placeholder="例）abcdefghijk@excitecode.co.jp" required>
+                </dd>
+              </dl>
+            </div>
+            <div class="form__select">
+              <p class="form__title-text">お問い合わせの種類</p>
+              <div class="form__select-parent">
+                <select class="form__select-text">
+                  <option value="">選択してください</option>
+                  <option value="">a</option>
+                  <option value="">b</option>
+                  <option value="">c</option>
+                </select>
+              </div>
+            </div>
+            <div class="form__textarea">
+              <p class="form__title-text">お問い合わせ内容</p>
+              <textarea class="form__input-textarea" required></textarea>
+            </div>
+            <div class="form__button">
+              <p class="form__button-text">「個人情報の取り扱いについて」同意する</p>
+            </div>
+          </form>
+          <div class="sub-contact__button more-button more-button--contact">
+            <button onclick="location.href='#'">実績を一覧へ戻る</button>
           </div>
         </div>
       </div>

@@ -1,0 +1,85 @@
+@use "global" as *;
+
+.confirm {
+  margin-top: rem(36);
+  padding-bottom: rem(80);
+  @include mq(md) {
+    margin-top: rem(60);
+    padding-bottom: rem(120);
+  }
+}
+
+.confirm__inner.inner {
+  max-width: rem(500);
+  @include mq(md) {
+    max-width: rem(680);
+  }
+}
+
+.confirm__top-titleText {
+  color: $black;
+  font-family: $jp-font;
+  font-weight: $normal;
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: rem(16);
+  }
+}
+
+.confirm__container {
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(100);
+  }
+}
+
+.confirm__sub-container dl {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: rem(30);
+
+  @include mq(md) {
+    flex-direction: row;
+    padding-bottom: rem(40);
+  }
+}
+
+.confirm__title {
+  width: 100%;
+  max-width: 100%;
+  color: $black;
+  font-family: $jp-font;
+  font-size: rem(15);
+  font-weight: $medium;
+  @include mq(md) {
+    max-width: calc((192 / 680) * 100%);
+  }
+}
+.confirm__text {
+  width: 100%;
+  max-width: 100%;
+  color: $black;
+  font-family: $jp-font;
+  font-size: rem(14);
+  font-weight: $normal;
+  margin-top: rem(10);
+  @include mq(md) {
+    margin-top: initial;
+    max-width: calc((488 / 680) * 100%);
+  }
+}
+.confirm__text--textarea {
+  line-height: calc(32 / 14);
+}
+
+.confirm__buttons {
+  display: flex;
+  justify-content: center;
+  gap: rem(23);
+  @include mq(md) {
+    gap: rem(80);
+  }
+}
+
+.comfirm__button {
+}

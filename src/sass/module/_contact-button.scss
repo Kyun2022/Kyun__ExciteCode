@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.contact-button button {
+  display: inline-block;
+  color: $blue;
+  font-family: $jp-font;
+  font-weight: $medium;
+  padding: rem(12);
+  background-color: $white;
+  border: 1px solid $blue;
+  border-radius: rem(4);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: rem(14);
+  width: rem(150);
+
+  @include mq(md) {
+    width: rem(280);
+    font-size: rem(18);
+    padding: rem(20);
+  }
+}
+
+.contact-button--submit button {
+  color: $white;
+  background-color: $blue;
+}

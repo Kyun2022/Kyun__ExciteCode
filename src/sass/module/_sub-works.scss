@@ -1,0 +1,46 @@
+@use "global" as *;
+
+.sub-works {
+}
+
+.sub-works__inner.inner {
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  max-width: rem(375);
+  padding-right: rem(30);
+  padding-left: rem(30);
+  @include mq(md) {
+    max-width: rem(1100);
+    padding-right: rem(20);
+    padding-left: rem(20);
+    flex-direction: row;
+  }
+}
+.sub-works__container-left {
+  width: 100%;
+  max-width: rem(375);
+  @include mq(md) {
+    max-width: calc((265 / 1100) * 100%);
+  }
+}
+
+.sub-works__container-left.news {
+  background-color: $white;
+}
+.sub-works__container-right {
+  width: 100%;
+  max-width: rem(500);
+  @include mq(md) {
+    max-width: calc((835 / 1100) * 100%);
+  }
+}
+.sub-works__container-right.works {
+  margin-top: rem(38);
+  background-color: $white;
+  @include mq(md) {
+    margin-top: initial;
+    border-left: 1px solid $white4;
+    padding-left: rem(40);
+  }
+}

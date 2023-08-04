@@ -16,7 +16,7 @@
   width: rem(114);
   height: rem(80);
   @include mq(md) {
-    width: rem(258);
+    min-width: rem(258);
     height: rem(180);
   }
 }

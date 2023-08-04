@@ -22,7 +22,6 @@
 .news__title {
   padding-left: rem(10);
 }
-
 .news__tab {
   margin-top: rem(40);
   padding-right: rem(30);
@@ -36,7 +35,12 @@
     gap: rem(20);
   }
 }
+.news__tab--works {
+  margin-top: initial;
+  padding-right: initial;
+  padding-left: rem(15);
 
+}
 .news__tab-text--current a {
   position: relative;
 }
